@@ -5,8 +5,8 @@ import NextButtonUI from '../NextButton/index';
 export default function footerUI() {
     return <div>
         <BackUI>
-            <BackButtonUI></BackButtonUI>
-            <NextButtonUI></NextButtonUI>
+            <BackButtonUI />
+            <NextButtonUI />
         </BackUI>
     </div>
 }
