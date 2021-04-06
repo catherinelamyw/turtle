@@ -9,7 +9,6 @@ function BackButtonUI ({
     fcolor= "#242C3C",
     fsize= "16px",
     space= "0.5px",
-    mright= "34px"
 }){
     return <button style={{
         textAlign="center",
@@ -23,7 +22,6 @@ function BackButtonUI ({
         fontSize={fsize},
         letterSpacing={space},
         fontWeight="bold",
-        marginRight={mright}
     }}>Back</button>
 }
 
