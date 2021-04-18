@@ -1,18 +1,13 @@
 import React from 'react';
-import FooterBackNextUI from '../comps/Bottom/FooterBackNext';
-import BackUI from '../comps/Bottom/Back';
-import BackButtonUI from '../comps/Bottom/BackButton';
-import ConfirmButtonUI from '../comps/Bottom/ConfirmButton';
-import FooterConfirmUI from '../comps/Bottom/FooterConfirm';
-import NextButtonUI from '../comps/Bottom/NextButton';
+import FooterUI from '../comps/Footer'
+import ConfirmFooterUI from '../comps/ConfirmFooter'
+import SmallButtonInput from '../comps/SmallButton';
 
 export default {
-    title:"Bottom Footers",
-    component: <FooterBackNextUI />
+    title:"Example/Footer",
+    component: <FooterUI />
 }
 
-export const BackUI = () => <FooterBackNextUI />
+export const BackNext = () => <FooterUI />
 
-export const BackButtonUI = () => <FooterBackNextUI />
-
-export const NextButtonUI = () => <FooterBackNextUI />
+export const Confirm = () => <ConfirmFooterUI><SmallButtonInput bgcolor='#FFE9A7'></SmallButtonInput></ConfirmFooterUI>
