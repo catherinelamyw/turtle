@@ -123,6 +123,9 @@ export default function redintro(){
                     buttona="Install a food garbage disposal in your sink"
                     buttonb="Choose environmentally- friendly cleaning products"
                     buttonc="Wash greasy plates in the sink"
+                    routea="/messagea"
+                    routeb="/messageb"
+                    routec="/messagec"
                 />
             </div>
     </RedCont>
