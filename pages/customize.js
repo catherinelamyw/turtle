@@ -15,7 +15,7 @@ export default function Customize() {
         <WhiteTextUI text='CUSTOMIZE'/>
       <div className={styles.graphics}>
         <MdArrowBack color='white' size='50px' title='left arrow' className={styles.symbols}/>
-        <img className={styles.image} src='/_grn-start.png' />
+        <img className={styles.image} src='/drawings/_grn-start.png' />
         <MdArrowForward color='white' size='50px' title='right arrow' className={styles.symbols}/>
       </div>
       <div className={styles.colors}>
