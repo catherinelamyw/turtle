@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-// import {useRouter} from 'next/router';
+import {useRouter} from 'next/router';
 
 const ButtonCont = styled.span`
   margin:5px;
@@ -17,16 +17,17 @@ const ButtonInput = styled.button`
   height:auto;
   margin:10px;
   padding:15px;
+  box-shadow: 0px 3px 5px #555;
 `;
 
 const ButtonUI = ({
   text="Test Button",
   bgcolor="#C8E0F0",
-  // routeTo="/home",
-  width="295",
+  routeTo="/",
+  width="295"
 }) => {
-  // const router = useRouter();
-  return <ButtonCont /*onClick={()=>router.push(routeTo)}*/>
+  const router = useRouter();
+  return <ButtonCont onClick={()=>router.push(routeTo)}>
     <ButtonInput background={bgcolor} width={width}>
       {text}
     </ButtonInput>

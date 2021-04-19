@@ -3,18 +3,21 @@ import styled from 'styled-components';
 
 const Paragraph = styled.p`
   font-family:sans-serif;
-  font-size:18px;
+  font-size:${props=>props.fontsize}px;
   font-weight:700;
-  color:#F0F0F0;
+  color:${props=>props.color};
   text-align:center;
   padding:5px;
-  max-width:375px;
+  max-width:${props=>props.maxwidth}px;
   overflow-wrap:wrap;
 `
 const WhiteTextUI = ({
-  text="Filler"
+  text="Filler",
+  fontsize="18",
+  fontcolor="#F0F0F0",
+  parwidth="375"
 }) => {
-  return <Paragraph>
+  return <Paragraph fontsize={fontsize} maxwidth={parwidth} color={fontcolor}>
     {text}
   </Paragraph>
 }
