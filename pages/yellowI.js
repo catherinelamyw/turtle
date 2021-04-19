@@ -4,10 +4,8 @@ import {useState} from 'react'
 import HeaderUI from '../comps/Header/TopHeader'
 import HamburgerMenuUI from '../comps/Header/HamburgerMenuUI'
 import Image from 'next/image'
-import {beach} from '../styles/redintro.module.css'
-import FooterUI from '../comps/Footer/'
-
-
+import {interval} from '../styles/redintro.module.css'
+import MarginUI from '../comps/Margin'
 
 
 const RedCont = styled.div `
@@ -19,19 +17,23 @@ const RedCont = styled.div `
     z-index: 1;
     position: relative;
     
+    
 
 
-    .egg {
+    .barrel{
         display:flex;
         justify-content: center;
         align-items: center;
-        margin-left: 30px;
-        margin-top: 75px;
+        margin-left: 130px;
+        margin-bottom: 85px;
         z-index: -1;
+        transform: rotate(13.01deg);
+        
     }
     .footer {
         display: flex;
         flex-direction: column;
+        z-index: -1;
         
         
     }
@@ -67,23 +69,21 @@ export default function redintro(){
     console.log("heightstate", heightstate)
     console.log("opacitystate", opacitystate)
     console.log("rightstate", rightstate)
+
     return <RedCont>
             <div className="header">
                 <HeaderUI
                 arrowrotation="rotate(225deg)"
-                text1="On a sandy beach,"
-                text2="153 sea turtles eggs"
-                text3="lay in a nest"
+                text1="Illegal dumpers caused an oil "
+                text2="spill, and Shelly must resurface"
+                text3="soon in order to breathe."
                 text4="The Facts"
-                text5="The whole nesting process for our turtles begins when they leave the sea to choose an area to lay their eggs. They dig a pit in the sand, fill it with 130 to 160 eggs, and then cover it. Then the hawksbill turtle will retreat back to see leaving the eggs, which will hatch in about 60 days."
+                text5="	This is a reality for so many hawksbill turtles as coastal developments and runoff oil spills from deep water Riggs destroy their habitats and food supply leaving to starve and suffocate."
                 opacity={opacitystate ? 0.8 : 1}
                 height={heightstate ? 500 : 155}
                 onClick={Handleclick} 
                 onHamClick={HandleHamClick}
                
-                
-                
-                
                 >
                 </HeaderUI>
             </div>
@@ -99,25 +99,30 @@ export default function redintro(){
                     
                         
                 />
-            <div className={beach}>
+            <div className={interval}>
                 <Image
-                    alt="Beach"
-                    src="/backgrounds/beach.png"
+                    alt="Water"
+                    src="/backgrounds/interval.png"
                     layout="responsive"
                     quality={50}
                     width={375}
                     height={750}
                 />
             </div>
-                <img className="egg img" 
-                    src="/drawings/egg.png"
-                    alt="egg"
+                <img className="barrel img" 
+                    src="/drawings/barrel.png"
+                    alt="oil"
                     layout="responsive"
-                    width={305}
-                    height={385}
+                    width={200}
+                    height={104}
                 />
             <div className="footer">
-                <FooterUI />
+                <MarginUI 
+                    text="What should we do?"
+                    buttona="Take a nearby current"
+                    buttonb="Quickly swim past it"
+                    buttonc="Turn and swim away"
+                />
             </div>
     </RedCont>
 }

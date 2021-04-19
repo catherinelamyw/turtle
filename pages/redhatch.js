@@ -21,14 +21,25 @@ const RedCont = styled.div `
     
 
 
-    .egg {
+    .shell {
         display:flex;
         justify-content: center;
         align-items: center;
-        margin-left: 30px;
-        margin-top: 75px;
+        margin-left: 80px;
+        margin-bottom: 0px;
         z-index: -1;
     }
+
+    .baby {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+        margin-left: 140px;
+        z-index: -1;
+        
+    }
+
     .footer {
         display: flex;
         flex-direction: column;
@@ -71,11 +82,11 @@ export default function redintro(){
             <div className="header">
                 <HeaderUI
                 arrowrotation="rotate(225deg)"
-                text1="On a sandy beach,"
-                text2="153 sea turtles eggs"
-                text3="lay in a nest"
+                text1="The swarming seagulls are "
+                text2=" ready to prey. One lucky turtle "
+                text3="reaches the ocean unharmed."
                 text4="The Facts"
-                text5="The whole nesting process for our turtles begins when they leave the sea to choose an area to lay their eggs. They dig a pit in the sand, fill it with 130 to 160 eggs, and then cover it. Then the hawksbill turtle will retreat back to see leaving the eggs, which will hatch in about 60 days."
+                text5="This can be one of the most dangerous times of their lives.  Hatchlings (baby turtles) make the journey from their nests to the sea. Crabs and flocks of gulls voraciously prey on the young turtles during this short scamper back to the sea and unfortunately not all of them always make it."
                 opacity={opacitystate ? 0.8 : 1}
                 height={heightstate ? 500 : 155}
                 onClick={Handleclick} 
@@ -109,12 +120,19 @@ export default function redintro(){
                     height={750}
                 />
             </div>
-                <img className="egg img" 
-                    src="/drawings/egg.png"
+                <img className="baby img"
+                    src="/drawings/_grn-baby.png"
                     alt="egg"
                     layout="responsive"
-                    width={305}
-                    height={385}
+                    width={100}
+                    height={120}
+                />
+                <img className="shell img" 
+                    src="/drawings/shell.png"
+                    alt="egg"
+                    layout="responsive"
+                    width={218}
+                    height={212}
                 />
             <div className="footer">
                 <FooterUI />

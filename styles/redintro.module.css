@@ -1,7 +1,84 @@
 .beach {
-    width: 23em;
+    width: 23.5em;
     height: 18em;
-    z-index: -1;
-    margin-top: 80px;
+    z-index: -2;
+    margin-top: 0px;
     
+}
+
+.juvenile {
+    width: 23.5em;
+    height: 18em;
+    z-index: -2;
+    margin-top: 0px;
+}
+
+.young {
+    width: 23.5em;
+    height: 18em;
+    z-index: -2;
+    margin-top: 0px;
+}
+
+.arrive {
+    width: 23.5em;
+    height: 18em;
+    z-index: -2;
+    margin-top: 0px;
+}
+
+.settle {
+    width: 23.5em;
+    height: 18em;
+    z-index: -2;
+    margin-top: 0px;
+}
+
+.deserted {
+    width: 23.5em;
+    height: 18em;
+    z-index: -2;
+    margin-top: 0px;
+}
+
+.poisioning {
+    width: 23.5em;
+    height: 18em;
+    z-index: -2;
+    margin-top: 0px;
+}
+
+.direction {
+    width: 23.5em;
+    height: 18em;
+    z-index: -2;
+    margin-top: 0px;
+}
+
+.interval {
+    width: 23.5em;
+    height: 18em;
+    z-index: -2;
+    margin-top: 0px;
+}
+
+.reality {
+    width: 23.5em;
+    height: 18em;
+    z-index: -2;
+    margin-top: 0px;
+}
+
+.expectation {
+    width: 23.5em;
+    height: 18em;
+    z-index: -2;
+    margin-top: 0px;
+}
+
+.comparision {
+    width: 23.5em;
+    height: 18em;
+    z-index: -2;
+    margin-top: 0px;
 }
