@@ -1,22 +1,28 @@
 import React from 'react'
 import styled from 'styled-components'
 
+//still need the first top arrow to shoot the page back away from the main content, i have an onclick waiting below.
+
 
 const HeaderCont = styled.div`
     font-family:sans-serif;
     display: flex;
+    position: absolute;
     flex-direction: row;
     background-color: #425B8C;
-    opacity: 0.8;
+    opacity: ${props=>props.opacity};
     height: ${props=>props.height};
     width: ${props=>props.width};
-    overflow: hidden;
+    right: ${props=>props.right}px;
+    overflow: scroll;
     padding: 0px 0px 0px 10px;
     border-radius: 0px 0px 20px 20px;
     & > * {
         color: #fff;
     }
-
+    z-index: 1;
+    transition: 1s;
+    
 
 `
 const HamburgerMenuTextCont = styled.div`
@@ -49,7 +55,7 @@ const ChapterTextHead = styled.h2`
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin: 15px 0px 0px 10px;
+    margin: 15px 0px 25px 10px;
 
 `
 const ChapterText = styled.h4`
@@ -90,6 +96,8 @@ const ChapterArrow = styled.div`
 //
 
 const HamburgerMenuUI = ({
+    opacity="0.8",
+    right="375px",
     arrowrotation="rotate(0deg)",
     arrowrotationC="rotate(0deg)",
     height="155px",
@@ -119,12 +127,13 @@ const HamburgerMenuUI = ({
     chaptertext9="Consequence- Pollution",
     //
     chapterheader4="Pop Quiz 4",
-    chapterheader5="Conclusion"
+    chapterheader5="Conclusion",
+    onHamClick = () =>{},
 }) =>{
-    return <HeaderCont height={height} width={width}>
+    return <HeaderCont height={height} width={width}  opacity={opacity} right={right}>
         <HamburgerMenuTextCont>
             <ArrowCont>
-                <HeaderArrow arrowrotation={arrowrotation} />
+                <HeaderArrow arrowrotation={arrowrotation} onHamClick={onHamClick} />
             </ArrowCont>
             <HamburgerTextHead>{text}</HamburgerTextHead>
             <br/>
