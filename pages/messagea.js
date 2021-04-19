@@ -12,7 +12,7 @@ export default function Message() {
         <WhiteTextUI text="Wrong!" fontsize="36"/>
         <WhiteTextUI text="Pesticides from food will harm marine life if the sewer drains reach the ocean."/>
       </div>
-      <ConfirmFooterUI buttona="Try Again" width="120" buttoncolor="#FFE9A7" routeTo="/yellowpolution"/>
+      <ConfirmFooterUI buttona="Try Again" width="120" buttoncolor="#FFE9A7" routeTo="/yellow2M"/>
     </div>
   )
 }

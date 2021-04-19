@@ -12,7 +12,7 @@ export default function Message() {
         <WhiteTextUI text="Wrong!" fontsize="36"/>
         <WhiteTextUI text="Grease should be wiped clean with paper towel and tossed in garbage. Do not pour fat, oil, or grease down the drain."/>
       </div>
-      <ConfirmFooterUI buttona="Try Again" width="120" buttoncolor="#FFE9A7" routeTo="/yellowpolution"/>
+      <ConfirmFooterUI buttona="Try Again" width="120" buttoncolor="#FFE9A7" routeTo="/yellow2M"/>
     </div>
   )
 }
