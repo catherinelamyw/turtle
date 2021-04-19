@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import SmallButtonUI from '../SmallButton';
-import SmallButtonInput from '../SmallButton';
+import ButtonUI from '../Button';
 
 const SmallBlueBox = styled.div`
   width:375px;
@@ -17,9 +16,12 @@ const SmallBlueBox = styled.div`
 
 const ConfirmFooterUI = ({
     buttona="Confirm",
+    buttoncolor="#FFE9A7",
+    width="120",
+    routeTo="/"
   }) => {
     return <SmallBlueBox>
-      <SmallButtonUI text={buttona}><SmallButtonInput background='#FFE9A7'></SmallButtonInput></SmallButtonUI>
+      <ButtonUI text={buttona} bgcolor={buttoncolor} width={width}  routeTo={routeTo}/>
     </SmallBlueBox>
   }
   
