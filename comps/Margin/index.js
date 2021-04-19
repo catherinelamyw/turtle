@@ -20,13 +20,15 @@ const MarginUI = ({
   buttona="eat",
   buttonb="swim",
   buttonc="rest",
-  routeTo="/"
+  routea="/",
+  routeb="/",
+  routec="/"
 }) => {
   return <BlueBox>
     <WhiteTextUI text={text}></WhiteTextUI>
-    <ButtonUI text={buttona} routeTo={routeTo}></ButtonUI>
-    <ButtonUI text={buttonb}></ButtonUI>
-    <ButtonUI text={buttonc}></ButtonUI>
+    <ButtonUI text={buttona} routeTo={routea}></ButtonUI>
+    <ButtonUI text={buttonb} routeTo={routeb}></ButtonUI>
+    <ButtonUI text={buttonc} routeTo={routec}></ButtonUI>
   </BlueBox>
 }
 
