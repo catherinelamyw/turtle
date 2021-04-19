@@ -2,6 +2,7 @@ import React from 'react'
 import HeaderUI from "../comps/Header/TopHeader"
 import HeaderPullDownUI from "../comps/Header/TopHeaderPullDown"
 import HamburgerMenuUI from "../comps/Header/HamburgerMenuUI"
+import HamburgerIcon from "../comps/Header/HamburgerIcon"
 
 export default {
     title: "Example/Header",
@@ -31,3 +32,5 @@ export const HamburgerMenu = () => <HamburgerMenuUI
     width="269px"
 
 />
+
+export const HamburgerIconUI = () => <HamburgerIcon />

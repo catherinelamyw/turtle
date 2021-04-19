@@ -14,6 +14,7 @@ const HeaderCont = styled.div`
     & > * {
         color: #fff;
     }
+    visibility: ${props=>props.visibility};
 
 
 `
@@ -79,6 +80,7 @@ const HeaderTextFacts = styled.h2`
 
 
 const HeaderPullDownUI = ({
+    visibility="visible",
     menucolor="#fff",
     arrowrotation="rotate(0deg)",
     text1="text",
@@ -87,7 +89,7 @@ const HeaderPullDownUI = ({
     height="155px",
     width="365px",
 }) =>{
-    return <HeaderCont height={height} width={width} >
+    return <HeaderCont height={height} width={width} visibility={visibility}>
         <MenuCont>
             <HeaderMenuBar menucolor={menucolor} />
             <HeaderMenuBar menucolor={menucolor} />
