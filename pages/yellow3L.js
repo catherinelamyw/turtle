@@ -122,7 +122,10 @@ export default function redintro(){
                     activites are safe?"
                     buttona="Wash your clothes with phosphate-free detergents"
                     buttonb="De-ice your driveway with salt"
-                    buttonc="Dispose chemicals in the sink "
+                    buttonc="Dispose chemicals in the sink"
+                    routea="/messaged"
+                    routeb="/messagee"
+                    routec="/messagef"
                 />
             </div>
     </RedCont>
