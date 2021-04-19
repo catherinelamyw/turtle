@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import HeaderUI from '../TopHeader'
 
 //still need the first top arrow to shoot the page back away from the main content, i have an onclick waiting below.
 
@@ -20,7 +21,7 @@ const HeaderCont = styled.div`
     & > * {
         color: #fff;
     }
-    z-index: 1;
+    z-index: 2;
     transition: 1s;
     
 
@@ -102,7 +103,7 @@ const HamburgerMenuUI = ({
     arrowrotationC="rotate(0deg)",
     height="155px",
     width="365px",
-    text="text",
+    text="Timeline & pages",
     //
     menutext1="Landing page",
     menutext2="Customization page",

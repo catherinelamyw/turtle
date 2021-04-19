@@ -4,10 +4,8 @@ import {useState} from 'react'
 import HeaderUI from '../comps/Header/TopHeader'
 import HamburgerMenuUI from '../comps/Header/HamburgerMenuUI'
 import Image from 'next/image'
-import {beach} from '../styles/redintro.module.css'
+import {young} from '../styles/redintro.module.css'
 import FooterUI from '../comps/Footer/'
-
-
 
 
 const RedCont = styled.div `
@@ -21,12 +19,12 @@ const RedCont = styled.div `
     
 
 
-    .egg {
+    .young{
         display:flex;
         justify-content: center;
         align-items: center;
-        margin-left: 30px;
-        margin-top: 75px;
+        margin-left: 95px;
+        margin-bottom: 233px;
         z-index: -1;
     }
     .footer {
@@ -71,19 +69,16 @@ export default function redintro(){
             <div className="header">
                 <HeaderUI
                 arrowrotation="rotate(225deg)"
-                text1="On a sandy beach,"
-                text2="153 sea turtles eggs"
-                text3="lay in a nest"
+                text1="Now that Shelly is a  "
+                text2="young turtle, it’s time to "
+                text3="settle close to the shore."
                 text4="The Facts"
-                text5="The whole nesting process for our turtles begins when they leave the sea to choose an area to lay their eggs. They dig a pit in the sand, fill it with 130 to 160 eggs, and then cover it. Then the hawksbill turtle will retreat back to see leaving the eggs, which will hatch in about 60 days."
+                text5="where they stay for about 30 years until they reach adulthood, the hawksbill turtle prefers near shore line nestings due to the abundance of sponges they also like to feed on."
                 opacity={opacitystate ? 0.8 : 1}
                 height={heightstate ? 500 : 155}
                 onClick={Handleclick} 
                 onHamClick={HandleHamClick}
                
-                
-                
-                
                 >
                 </HeaderUI>
             </div>
@@ -99,22 +94,22 @@ export default function redintro(){
                     
                         
                 />
-            <div className={beach}>
+            <div className={young}>
                 <Image
-                    alt="Beach"
-                    src="/backgrounds/beach.png"
+                    alt="shoreline water"
+                    src="/backgrounds/young.png"
                     layout="responsive"
                     quality={50}
                     width={375}
                     height={750}
                 />
             </div>
-                <img className="egg img" 
-                    src="/drawings/egg.png"
+                <img className="young img" 
+                    src="/drawings/_grn-young.png"
                     alt="egg"
                     layout="responsive"
-                    width={305}
-                    height={385}
+                    width={165}
+                    height={176}
                 />
             <div className="footer">
                 <FooterUI />
