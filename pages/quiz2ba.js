@@ -46,7 +46,7 @@ export default function Quiz1() {
         </div>
         <div className="Mid">
             <WhiteTextUI fontsize="24" text="Wrong!"></WhiteTextUI>
-            <ButtonUI text="Getting lost" bgcolor="#FF6464" onClick={()=>router.push("/quiz1b")}></ButtonUI>
+            <ButtonUI text="Getting lost" bgcolor="#FF6464" onClick={()=>router.push("/quiz2b")}></ButtonUI>
             <WhiteTextUI fontsize="20" text="Want to try again?"></WhiteTextUI>
         </div>
         <div className="Bot">

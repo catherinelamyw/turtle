@@ -48,7 +48,7 @@ export default function Quiz1() {
             <ButtonUI text="10 to 40" bgcolor="#F0F0F0" onClick={()=>router.push("/quiz1c")}></ButtonUI>
         </div>
         <div className="Bot">
-            <ConfirmFooterUI></ConfirmFooterUI>
+            <ConfirmFooterUI onClick={()=>router.push("/quiz1ca")}></ConfirmFooterUI>
         </div>
     </Quiz1Cont>
 }
