@@ -17,10 +17,12 @@ const SmallBlueBox = styled.div`
 const FooterUI = ({
     buttona="Back",
     buttonb="Next",
+    routea="/",
+    routeb="/",
   }) => {
     return <SmallBlueBox>
-      <SmallButtonUI text={buttona}></SmallButtonUI>
-      <SmallButtonUI text={buttonb}></SmallButtonUI>
+      <SmallButtonUI text={buttona} routeTo={routea}></SmallButtonUI>
+      <SmallButtonUI text={buttonb} routeTo={routeb}></SmallButtonUI>
     </SmallBlueBox>
   }
   

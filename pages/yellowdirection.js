@@ -120,6 +120,9 @@ export default function redintro(){
                     buttona="Northeast"
                     buttonb="East"
                     buttonc="Southeast"
+                    routea="/yellowI"
+                    routeb="/yellow2I"
+                    routec="/yellow3I"
                 />
             </div>
     </RedCont>

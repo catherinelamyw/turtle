@@ -121,6 +121,8 @@ export default function redintro(){
                     text="What should we do?"
                     buttona="Swim away from here"
                     buttonb="Try to swim around it"
+                    routea="/red3J"
+                    routeb="/red6J"
                 />
             </div>
     </RedCont>

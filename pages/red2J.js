@@ -113,7 +113,10 @@ export default function redintro(){
                     height={195}
                 />
             <div className="footer">
-                <FooterUI />
+                <FooterUI 
+                    routea="/yellow2I"
+                    routeb="/red2Kexpect"
+                />
             </div>
     </RedCont>
 }

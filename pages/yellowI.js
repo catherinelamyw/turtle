@@ -122,6 +122,9 @@ export default function redintro(){
                     buttona="Take a nearby current"
                     buttonb="Quickly swim past it"
                     buttonc="Turn and swim away"
+                    routea="/redJ"
+                    routeb="/red4J"
+                    routec="/yellow2I"
                 />
             </div>
     </RedCont>
