@@ -59,8 +59,8 @@ const Quiz1Cont = styled.div`
     .Bot {
         display: flex;
         wdith: 90vw;
-        margin-top: 24%;
         position: fixed;
+        bottom: 0;
     }
 `
 export default function Quiz1() {
