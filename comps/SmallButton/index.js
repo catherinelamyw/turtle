@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {useRouter} from 'next/router';
 
 const SmallButtonCont = styled.span`
   margin:5px;
@@ -20,11 +21,11 @@ const SmallButtonInput = styled.button`
 const SmallButtonUI = ({
     text="Back",
     bgcolor="#C8E0F0",
-    // routeTo="/home",
+    routeTo="/",
     width="122",
   }) => {
-    // const router = useRouter();
-    return <SmallButtonCont /*onClick={()=>router.push(routeTo)}*/>
+    const router = useRouter()
+    return <SmallButtonCont onClick={()=>router.push(routeTo)}>
       <SmallButtonInput background={bgcolor} width={width}>
         {text}
       </SmallButtonInput>

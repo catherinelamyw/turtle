@@ -135,7 +135,10 @@ export default function redintro(){
                     height={212}
                 />
             <div className="footer">
-                <FooterUI />
+                <FooterUI
+                    routea="/redintro"
+                    routeb="/redjuven"
+                />
             </div>
     </RedCont>
 }

@@ -100,7 +100,10 @@ export default function redintro(){
                 />
             </div>
             <div className="footer">
-                <FooterUI />
+                <FooterUI 
+                    routea="/red2Kexpect"
+                    routeb="/red2Lreality"
+                />
             </div>
     </RedCont>
 }

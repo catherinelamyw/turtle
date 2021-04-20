@@ -134,6 +134,9 @@ export default function redintro(){
                     buttona="Eat some pink jellyfish"
                     buttonb="Eat some blue jellyfish"
                     buttonc="Continue to swim"
+                    routea="/red2J"
+                    routeb="/red5J"
+                    routec="/yellow3I"
                 />
             </div>
     </RedCont>

@@ -9,7 +9,7 @@ const HamburgerCont = styled.div `
     .img {
         width: 52px;
         height: 52px;
-        background-color: ${props=>props.menucolor};
+        color: ${props=>props.menucolor};
         
     }
 

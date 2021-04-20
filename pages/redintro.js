@@ -117,7 +117,10 @@ export default function redintro(){
                     height={385}
                 />
             <div className="footer">
-                <FooterUI />
+                <FooterUI 
+                    routea='/howtoplay'
+                    routeb="/redhatch"
+                />
             </div>
     </RedCont>
 }
