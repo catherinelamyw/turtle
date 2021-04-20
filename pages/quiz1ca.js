@@ -46,7 +46,7 @@ export default function Quiz1() {
         </div>
         <div className="Mid">
             <WhiteTextUI fontsize="24" text="Wrong!"></WhiteTextUI>
-            <ButtonUI text="10 to 40" bgcolor="#FF6464" onClick={()=>router.push("/quiz1b")}></ButtonUI>
+            <ButtonUI text="10 to 40" bgcolor="#FF6464" routeTo=""></ButtonUI>
             <WhiteTextUI fontsize="20" text="Want to try again?"></WhiteTextUI>
         </div>
         <div className="Bot">

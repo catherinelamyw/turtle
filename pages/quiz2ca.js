@@ -77,9 +77,9 @@ export default function Quiz1() {
             </div>
         </div>
         <div className="Mid">
-            <ButtonUI text="Scavenging for food" bgcolor="#F0F0F0" onClick={()=>router.push("/quiz2a")}></ButtonUI>
-            <ButtonUI text="Getting lost" bgcolor="#FFE9A7" onClick={()=>router.push("/quiz2b")}></ButtonUI>
-            <ButtonUI text="As soon as they hatch" bgcolor="#FFE9A7" onClick={()=>router.push("/quiz2c")}></ButtonUI>
+            <ButtonUI text="Scavenging for food" bgcolor="#F0F0F0" routeTo="/quiz2a"></ButtonUI>
+            <ButtonUI text="Getting lost" bgcolor="#FFE9A7" routeTo="/quiz2b"></ButtonUI>
+            <ButtonUI text="As soon as they hatch" bgcolor="#FFE9A7" routeTo="/quiz2c"></ButtonUI>
         </div>
         <div className="Bot">
             <FooterUI buttona="Back" buttonb="Continue"></FooterUI>

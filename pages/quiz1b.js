@@ -43,12 +43,12 @@ export default function Quiz1() {
             <QuizHeaderUI text1="" text2="POP QUIZ" text3="" text4="How many eggs do the Hawksbill Sea Turtles lay?" text5=""></QuizHeaderUI>
         </div>
         <div className="Mid">
-            <ButtonUI text="130 to 160" bgcolor="#FFE9A7" onClick={()=>router.push("/quiz1a")}></ButtonUI>
-            <ButtonUI text="50 to 100" bgcolor="#F0F0F0" onClick={()=>router.push("/quiz1b")}></ButtonUI>
-            <ButtonUI text="10 to 40" bgcolor="#FFE9A7" onClick={()=>router.push("/quiz1c")}></ButtonUI>
+            <ButtonUI text="130 to 160" bgcolor="#FFE9A7" routeTo="/quiz1a"></ButtonUI>
+            <ButtonUI text="50 to 100" bgcolor="#F0F0F0" routeTo="/quiz1b"></ButtonUI>
+            <ButtonUI text="10 to 40" bgcolor="#FFE9A7" routeTo="/quiz1c"></ButtonUI>
         </div>
         <div className="Bot">
-            <ConfirmFooterUI onClick={()=>router.push("/quiz1ba")}></ConfirmFooterUI>
+            <ConfirmFooterUI routeTo="/quiz1ba"></ConfirmFooterUI>
         </div>
     </Quiz1Cont>
 }
