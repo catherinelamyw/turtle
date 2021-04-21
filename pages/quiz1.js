@@ -48,7 +48,7 @@ export default function Quiz1() {
             <ButtonUI text="10 to 40" bgcolor="#FFE9A7" routeTo="/quiz1c"></ButtonUI>
         </div>
         <div className="Bot">
-            <ConfirmFooterUI></ConfirmFooterUI>
+            <ConfirmFooterUI routeTo="/quiz1"></ConfirmFooterUI>
         </div>
     </Quiz1Cont>
 }
