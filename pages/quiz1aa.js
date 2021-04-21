@@ -82,7 +82,7 @@ export default function Quiz1() {
             <ButtonUI text="10 to 40" bgcolor="#FFE9A7" routeTo="/quiz1c"></ButtonUI>
         </div>
         <div className="Bot">
-            <FooterUI buttona="Back" buttonb="Continue" routeb="/redyoung"></FooterUI>
+            <FooterUI buttona="Back" buttonb="Continue" routeb="/redyoung" routea="/quiz1"></FooterUI>
         </div>
     </Quiz1Cont>
 }

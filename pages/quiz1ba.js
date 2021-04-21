@@ -50,7 +50,7 @@ export default function Quiz1() {
             <WhiteTextUI fontsize="20" text="Want to try again?"></WhiteTextUI>
         </div>
         <div className="Bot">
-            <FooterUI bgcolor="#FFE9A7" buttona="Try Again" buttonb="Pass"></FooterUI>
+            <FooterUI bgcolor="#FFE9A7" buttona="Try Again" buttonb="Pass" routeb="/redyoung" routea="/quiz1"></FooterUI>
         </div>
     </Quiz1Cont>
 }
