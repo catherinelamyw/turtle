@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import HamburgerIcon from '../HamburgerIcon'
+import HouseIcon from '../HouseIcon'
+import ArrowIcon from '../ArrowIcon'
+import WhiteTextUI from '../../WhiteText'
+import NumberIcon from '../PageNumberIcon'
 
 
 
@@ -8,7 +11,6 @@ const HeaderCont = styled.div`
     font-family:sans-serif;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     background-color: #242C3C;
     height: ${props=>props.height}px;
     width: ${props=>props.width};
@@ -29,21 +31,14 @@ const HeaderCont = styled.div`
 const MenuCont = styled.div`
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    min-height: 150px;
+    min-width: 50px;
     
 `
 
-const HeaderArrow = styled.div`
-    height: 20px;
-    width: 20px;
-    margin: 20px 0px 0px 15px;
-    border-left: 5px solid ; 
-    border-top: 5px solid ;
-    transform: ${props=>props.arrowrotation};
-    
-    
-    
-`
 
 const HeaderText = styled.h4`
     display: flex;
@@ -60,7 +55,8 @@ const HeaderText = styled.h4`
 const HeaderTextCont = styled.div`
     display: flex;
     flex-direction: column;
-    margin-top: 35px;
+    align-items: center;
+    margin-top: 18px;
    
 `
 
@@ -74,7 +70,6 @@ const HeaderTextFacts = styled.h2`
 
 const HeaderUI = ({
     menucolor="#fff",
-    arrowrotation="rotate(0deg)",
     text1="text",
     text2="text",
     text3="text",
@@ -84,13 +79,13 @@ const HeaderUI = ({
     width="375px",
     opacity="1",
     onClick = () =>{},
-    onHamClick =() =>{}
+    number="1",
     
 }) =>{
     return <HeaderCont height={height} width={width} opacity={opacity} >
         <MenuCont>
-            <HamburgerIcon menucolor={menucolor} onHamClick={onHamClick} />
-            <HeaderArrow arrowrotation={arrowrotation} onClick={onClick} />
+            <HouseIcon menucolor={menucolor} />
+            <WhiteTextUI text="Home" fontsize="16" />
         </MenuCont>
         <HeaderTextCont>
             <HeaderText >
@@ -101,6 +96,7 @@ const HeaderUI = ({
                 {text3}
                 <br/>
             </HeaderText>
+            <ArrowIcon onClick={onClick} />
             <HeaderTextFacts>
                 {text4}
             </HeaderTextFacts>
@@ -108,6 +104,7 @@ const HeaderUI = ({
                 {text5}
             </HeaderText>
         </HeaderTextCont>
+        <NumberIcon number={number} />
         
     </HeaderCont>
 }
