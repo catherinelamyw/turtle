@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import React from 'react'
 import {useState} from 'react'
 import HeaderUI from '../comps/Header/TopHeader'
-import HamburgerMenuUI from '../comps/Header/HamburgerMenuUI'
 import Image from 'next/image'
 import {interval} from '../styles/redintro.module.css'
 import MarginUI from '../comps/SmallMargin'
@@ -47,10 +46,6 @@ export default function redintro(){
     const [rightstate, setrightstate] = useState(false)
     
 
-    // Hamburger back states
-    
-    
-    //
     const Handleclick = () =>{
         setheightstate(!heightstate)
         setopacitystate(!opacitystate)
@@ -61,10 +56,6 @@ export default function redintro(){
         setrightstate(!rightstate)
         
     }
-    // const HandleHambackClick = () =>{
-    //     setleftstate(leftstate)
-        
-    // }
 
     console.log("heightstate", heightstate)
     console.log("opacitystate", opacitystate)
@@ -79,26 +70,14 @@ export default function redintro(){
                 text3=""
                 text4="The Facts"
                 text5="	The Hawksbill doesn’t have too many natural predators due to its thick large shell. But a huge danger to them is humans and overfishing in tropical climates. Its common for the turtle to be caught in stray fishing nets and taken aboard ships and not thrown back in the water due to their shells being a commodity. The legal trade of these shells ended back in 1993 but black market deals still happen today."
+                number="6-c"
                 opacity={opacitystate ? 0.8 : 1}
                 height={heightstate ? 500 : 155}
                 onClick={Handleclick} 
-                onHamClick={HandleHamClick}
                
                 >
                 </HeaderUI>
             </div>
-                <HamburgerMenuUI 
-                    arrowrotation="rotate(-45deg)"
-                    arrowrotationC="rotate(225deg)"
-                    width="280px"
-                    height="610px"
-                    z-index="0"
-                    opacity={opacitystate ? 1 : 0}
-                    right={rightstate ? 95 : 375}
-                    
-                    
-                        
-                />
             <div className={interval}>
                 <Image
                     alt="Water"

@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import React from 'react'
 import {useState} from 'react'
 import HeaderUI from '../comps/Header/TopHeader'
-import HamburgerMenuUI from '../comps/Header/HamburgerMenuUI'
 import Image from 'next/image'
 import {beach} from '../styles/redintro.module.css'
 import FooterUI from '../comps/Footer/'
@@ -45,24 +44,12 @@ export default function redintro(){
     const [rightstate, setrightstate] = useState(false)
     
 
-    // Hamburger back states
-    
-    
-    //
+  
     const Handleclick = () =>{
         setheightstate(!heightstate)
         setopacitystate(!opacitystate)
        
     }
-    const HandleHamClick = () =>{
-        setopacitystate(!opacitystate)
-        setrightstate(!rightstate)
-        
-    }
-    // const HandleHambackClick = () =>{
-    //     setleftstate(leftstate)
-        
-    // }
 
     console.log("heightstate", heightstate)
     console.log("opacitystate", opacitystate)
@@ -70,7 +57,6 @@ export default function redintro(){
     return <RedCont>
             <div className="header">
                 <HeaderUI
-                arrowrotation="rotate(225deg)"
                 text1="On a sandy beach,"
                 text2="153 sea turtles eggs"
                 text3="lay in a nest"
@@ -79,15 +65,12 @@ export default function redintro(){
                 opacity={opacitystate ? 0.8 : 1}
                 height={heightstate ? 500 : 155}
                 onClick={Handleclick} 
-                onHamClick={HandleHamClick}
-               
-                
-                
+                // onHamClick={HandleHamClick}
                 
                 >
                 </HeaderUI>
             </div>
-                <HamburgerMenuUI 
+                {/* <HamburgerMenuUI 
                     arrowrotation="rotate(-45deg)"
                     arrowrotationC="rotate(225deg)"
                     width="280px"
@@ -98,7 +81,7 @@ export default function redintro(){
                     
                     
                         
-                />
+                /> */}
             <div className={beach}>
                 <Image
                     alt="Beach"

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import ButtonUI from '../Button';
 
 const SmallBlueBox = styled.div`
-  width:375px;
+  width: 100%;
   height:${props=>props.height}px;
   background-color:#242C3C;
   border-radius:20px 20px 0 0;

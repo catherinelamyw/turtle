@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import React from 'react'
 import {useState} from 'react'
 import HeaderUI from '../comps/Header/TopHeader'
-import HamburgerMenuUI from '../comps/Header/HamburgerMenuUI'
 import Image from 'next/image'
 import {beach} from '../styles/redintro.module.css'
 import FooterUI from '../comps/Footer/'
@@ -56,41 +55,26 @@ export default function redintro(){
     const [rightstate, setrightstate] = useState(false)
     
 
-    // Hamburger back states
-    
-    
-    //
     const Handleclick = () =>{
         setheightstate(!heightstate)
         setopacitystate(!opacitystate)
        
     }
-    const HandleHamClick = () =>{
-        setopacitystate(!opacitystate)
-        setrightstate(!rightstate)
-        
-    }
-    // const HandleHambackClick = () =>{
-    //     setleftstate(leftstate)
-        
-    // }
-
     console.log("heightstate", heightstate)
     console.log("opacitystate", opacitystate)
     console.log("rightstate", rightstate)
     return <RedCont>
             <div className="header">
                 <HeaderUI
-                arrowrotation="rotate(225deg)"
                 text1="The swarming seagulls are "
                 text2=" ready to prey. One lucky turtle "
                 text3="reaches the ocean unharmed."
                 text4="The Facts"
                 text5="This can be one of the most dangerous times of their lives.  Hatchlings (baby turtles) make the journey from their nests to the sea. Crabs and flocks of gulls voraciously prey on the young turtles during this short scamper back to the sea and unfortunately not all of them always make it."
+                number="2"
                 opacity={opacitystate ? 0.8 : 1}
                 height={heightstate ? 500 : 155}
                 onClick={Handleclick} 
-                onHamClick={HandleHamClick}
                
                 
                 
@@ -98,18 +82,6 @@ export default function redintro(){
                 >
                 </HeaderUI>
             </div>
-                <HamburgerMenuUI 
-                    arrowrotation="rotate(-45deg)"
-                    arrowrotationC="rotate(225deg)"
-                    width="280px"
-                    height="610px"
-                    z-index="0"
-                    opacity={opacitystate ? 1 : 0}
-                    right={rightstate ? 95 : 375}
-                    
-                    
-                        
-                />
             <div className={beach}>
                 <Image
                     alt="Beach"

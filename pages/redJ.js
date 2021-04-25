@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import React from 'react'
 import {useState} from 'react'
 import HeaderUI from '../comps/Header/TopHeader'
-import HamburgerMenuUI from '../comps/Header/HamburgerMenuUI'
 import Image from 'next/image'
 import {arrive} from '../styles/redintro.module.css'
 import FooterUI from '../comps/Footer/'
@@ -42,25 +41,11 @@ export default function redintro(){
     const [opacitystate, setopacitystate] = useState(false)
     const [rightstate, setrightstate] = useState(false)
     
-
-    // Hamburger back states
-    
-    
-    //
     const Handleclick = () =>{
         setheightstate(!heightstate)
         setopacitystate(!opacitystate)
        
     }
-    const HandleHamClick = () =>{
-        setopacitystate(!opacitystate)
-        setrightstate(!rightstate)
-        
-    }
-    // const HandleHambackClick = () =>{
-    //     setleftstate(leftstate)
-        
-    // }
 
     console.log("heightstate", heightstate)
     console.log("opacitystate", opacitystate)
@@ -74,26 +59,14 @@ export default function redintro(){
                 text3=""
                 text4="The Facts"
                 text5="Some turtles are lucky and face adversity and make it to the reefs. however This is becoming more and more increasingly rare as the years go on. We need to do our part to keep these creatures around for our children too"
+                number="End"
                 opacity={opacitystate ? 0.8 : 1}
                 height={heightstate ? 500 : 155}
                 onClick={Handleclick} 
-                onHamClick={HandleHamClick}
                
                 >
                 </HeaderUI>
             </div>
-                <HamburgerMenuUI 
-                    arrowrotation="rotate(-45deg)"
-                    arrowrotationC="rotate(225deg)"
-                    width="280px"
-                    height="610px"
-                    z-index="0"
-                    opacity={opacitystate ? 1 : 0}
-                    right={rightstate ? 95 : 375}
-                    
-                    
-                        
-                />
             <div className={arrive}>
                 <Image
                     alt="Coral reef"
