@@ -10,12 +10,12 @@ import MarginUI from '../comps/SmallMargin'
 const RedCont = styled.div `
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    max-width: 375px;
-    max-height: 812px;
+    min-height: 100vh;
+    min-width: 100vw;
     z-index: 1;
     position: relative;
-    
     
     
     
@@ -23,16 +23,8 @@ const RedCont = styled.div `
         display:flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 0px;
         z-index: -1;
         
-        
-        
-    }
-    .footer {
-        display: flex;
-        flex-direction: column;
-        z-index: -1;
         
         
     }
@@ -65,8 +57,8 @@ export default function redintro(){
             <div className="header">
                 <HeaderUI
                 arrowrotation="rotate(225deg)"
-                text1="A fisherman casted a net into the"
-                text2="ocean for some nearby tuna."
+                text1="A fisherman casted a net into"
+                text2="the ocean for some nearby tuna."
                 text3=""
                 text4="The Facts"
                 text5="	The Hawksbill doesn’t have too many natural predators due to its thick large shell. But a huge danger to them is humans and overfishing in tropical climates. Its common for the turtle to be caught in stray fishing nets and taken aboard ships and not thrown back in the water due to their shells being a commodity. The legal trade of these shells ended back in 1993 but black market deals still happen today."
@@ -82,20 +74,19 @@ export default function redintro(){
                 <Image
                     alt="Water"
                     src="/backgrounds/interval.png"
-                    layout="responsive"
-                    quality={50}
-                    width={378}
-                    height={750}
+                    layout="fill"
+                    objectFit="cover"
+                    quality={10}
                 />
             </div>
                 <img className="net img" 
                     src="/drawings/net.png"
                     alt="oil"
                     layout="responsive"
+                    quality={10}
                     width={375}
                     height={290}
                 />
-            <div className="footer">
                 <MarginUI 
                     text="What should we do?"
                     buttona="Swim away from here"
@@ -103,6 +94,5 @@ export default function redintro(){
                     routea="/red3J"
                     routeb="/red6J"
                 />
-            </div>
     </RedCont>
 }

@@ -12,9 +12,10 @@ import FooterUI from '../comps/Footer/'
 const RedCont = styled.div `
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    max-width: 375px;
-    max-height: 812px;
+    min-height: 100vh;
+    min-width: 100vw;
     z-index: 1;
     position: relative;
     
@@ -24,8 +25,6 @@ const RedCont = styled.div `
         display:flex;
         justify-content: center;
         align-items: center;
-        margin-left: 80px;
-        margin-bottom: 0px;
         z-index: -1;
     }
 
@@ -33,18 +32,12 @@ const RedCont = styled.div `
         display:flex;
         justify-content: center;
         align-items: center;
-        margin-top: 80px;
-        margin-left: 140px;
+        margin-top: 100px;
         z-index: -1;
         
     }
 
-    .footer {
-        display: flex;
-        flex-direction: column;
-        
-        
-    }
+
     
 `
 
@@ -86,31 +79,30 @@ export default function redintro(){
                 <Image
                     alt="Beach"
                     src="/backgrounds/beach.png"
-                    layout="responsive"
-                    quality={50}
-                    width={375}
-                    height={750}
+                    layout="fill"
+                    objectFit="cover"
+                    quality={10}
                 />
             </div>
-                <img className="baby img"
+                <img className="baby"
                     src="/drawings/_grn-baby.png"
                     alt="egg"
                     layout="responsive"
+                    quality={10}
                     width={100}
                     height={120}
                 />
-                <img className="shell img" 
+                <img className="shell" 
                     src="/drawings/shell.png"
                     alt="egg"
                     layout="responsive"
-                    width={218}
-                    height={212}
+                    quality={10}
+                    width={250}
+                    height={270}
                 />
-            <div className="footer">
                 <FooterUI
                     routea="/redintro"
                     routeb="/redjuven"
                 />
-            </div>
     </RedCont>
 }

@@ -10,9 +10,10 @@ import FooterUI from '../comps/Footer/'
 const RedCont = styled.div `
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    max-width: 375px;
-    max-height: 812px;
+    min-height: 100vh;
+    min-width: 100vw;
     z-index: 1;
     position: relative;
     
@@ -22,17 +23,9 @@ const RedCont = styled.div `
         display:flex;
         justify-content: center;
         align-items: center;
-        margin-left: 95px;
-        margin-bottom: 250px;
         z-index: -1;
     }
-    .footer {
-        display: flex;
-        flex-direction: column;
-        
-        
-    }
-    
+
 `
 
 export default function redintro(){
@@ -71,24 +64,22 @@ export default function redintro(){
                 <Image
                     alt="Coral reef"
                     src="/backgrounds/arrive.png"
-                    layout="responsive"
-                    quality={50}
-                    width={375}
-                    height={750}
+                    layout="fill"
+                    objectFit="cover"
+                    quality={10}
                 />
             </div>
                 <img className="start img" 
                     src="/drawings/_grn-start.png"
                     alt="turtle"
                     layout="responsive"
+                    quality={10}
                     width={192}
                     height={165}
                 />
-            <div className="footer">
                 <FooterUI 
                     routea="/yellowI"
                     routeb="/conclusion"
                 />
-            </div>
     </RedCont>
 }

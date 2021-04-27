@@ -10,29 +10,20 @@ import MarginUI from '../comps/Margin'
 const RedCont = styled.div `
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    max-width: 375px;
-    max-height: 812px;
+    min-height: 100vh;
+    min-width: 100vw;
     z-index: 1;
     position: relative;
     
     
 
-
     .shape{
         display:flex;
         justify-content: center;
         align-items: center;
-        margin-left: 20px;
-        margin-bottom: 110px;
         z-index: -1;
-        
-    }
-    .footer {
-        display: flex;
-        flex-direction: column;
-        z-index: -1;
-        
         
     }
     
@@ -75,20 +66,19 @@ export default function redintro(){
                 <Image
                     alt="shoreline"
                     src="/backgrounds/direction.jpg"
-                    layout="responsive"
-                    quality={50}
-                    width={375}
-                    height={750}
+                    layout="fill"
+                    objectFit="cover"
+                    quality={10}
                 />
             </div>
                 <img className="shape img" 
                     src="/drawings/_grn-shape.png"
                     alt="turtle"
                     layout="responsive"
+                    quality={10}
                     width={95}
                     height={87}
                 />
-            <div className="footer">
                 <MarginUI 
                     text="Where should Shelly go?"
                     buttona="Northeast"
@@ -98,6 +88,5 @@ export default function redintro(){
                     routeb="/yellow2I"
                     routec="/yellow3I"
                 />
-            </div>
     </RedCont>
 }

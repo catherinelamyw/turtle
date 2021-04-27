@@ -21,7 +21,7 @@ export default function Conclusion() {
           <Image 
             src="/drawings/_grn-dream.png"
             layout="intrinsic"
-            quality={15}
+            quality={10}
             width={250}
             height={250}
             priority={true}

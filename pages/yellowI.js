@@ -10,9 +10,10 @@ import MarginUI from '../comps/Margin'
 const RedCont = styled.div `
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    max-width: 375px;
-    max-height: 812px;
+    min-height: 100vh;
+    min-width: 100vw;
     z-index: 1;
     position: relative;
     
@@ -23,17 +24,8 @@ const RedCont = styled.div `
         display:flex;
         justify-content: center;
         align-items: center;
-        margin-left: 130px;
-        margin-bottom: 85px;
         z-index: -1;
         transform: rotate(13.01deg);
-        
-    }
-    .footer {
-        display: flex;
-        flex-direction: column;
-        z-index: -1;
-        
         
     }
     
@@ -77,20 +69,19 @@ export default function redintro(){
                 <Image
                     alt="Water"
                     src="/backgrounds/interval.png"
-                    layout="responsive"
-                    quality={50}
-                    width={375}
-                    height={750}
+                    layout="fill"
+                    objectFit="cover"
+                    quality={10}
                 />
             </div>
                 <img className="barrel img" 
                     src="/drawings/barrel.png"
                     alt="oil"
                     layout="responsive"
+                    quality={10}
                     width={200}
                     height={104}
                 />
-            <div className="footer">
                 <MarginUI 
                     text="What should we do?"
                     buttona="Take a nearby current"
@@ -100,6 +91,5 @@ export default function redintro(){
                     routeb="/red4J"
                     routec="/yellow2I"
                 />
-            </div>
     </RedCont>
 }
