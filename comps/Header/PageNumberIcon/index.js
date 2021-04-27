@@ -19,16 +19,17 @@ const CircleNumber = styled.div `
     border-radius: 50%;
     width: 42px;
     height: 42px;
-
+    color: white;
 `   
 
 const NumberIcon = ({
     menucolor="white",
     number="1",
+    text="Page"
 }) => {
     return <NumberCont menucolor={menucolor}>
         <CircleNumber>{number}</CircleNumber>
-        <WhiteTextUI text="Page" fontsize="16" />
+        <WhiteTextUI text={text} fontsize="16" />
     </NumberCont>
 }
 

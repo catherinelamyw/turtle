@@ -5,8 +5,9 @@
 }
 
 .image {
-  max-width: 140px;
+  max-width: 240px;
   margin: 20px;
+  opacity: 50%;
 }
 
 .bigpar {
@@ -16,10 +17,15 @@
 
 .pics {
   display: flex;
+  flex-direction: column;
+  margin: 50px;
   align-items: center;
   justify-content: center;
+  border: 1px solid #FFE9A7;
+  min-width: 300px;
+  max-width: 300px;
+  padding: 10px;
 }
-
 .menusymbol {
   margin:  10px 50px;
 }
