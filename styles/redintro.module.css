@@ -1,9 +1,9 @@
 .beach {
-    width: 23.5em;
-    height: 18em;
-    z-index: -2;
-    margin-top: 0px;
-    
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: -1;
 }
 
 .juvenile {

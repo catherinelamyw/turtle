@@ -11,19 +11,19 @@ const HouseCont = styled.div  `
     .img {
         height: 42px;
         width: 42px;
-        color: ${props=>props.menucolor};
+        color: ${props=>props.color};
     }
 
 `
 
 
 const HouseIcon = ({
-    menucolor="white",
+    color="white",
     routeTo="/",
 }) => {
     const router = useRouter();
     return <HouseCont onClick={()=>router.push(routeTo)}>
-        <BsFillHouseDoorFill className="img" menucolor={menucolor} />
+        <BsFillHouseDoorFill className="img" color={color} />
 
     </HouseCont>
 }

@@ -12,28 +12,25 @@ import FooterUI from '../comps/Footer/'
 const RedCont = styled.div `
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    max-width: 375px;
-    max-height: 812px;
+    min-height: 100vh;
+    min-width: 100vw;
     z-index: 1;
     position: relative;
     
+   
 
 
     .egg {
         display:flex;
         justify-content: center;
         align-items: center;
-        margin-left: 30px;
-        margin-top: 75px;
         z-index: -1;
+        margin-top: 245px;
+       
     }
-    .footer {
-        display: flex;
-        flex-direction: column;
-        
-        
-    }
+
     
 `
 
@@ -65,45 +62,32 @@ export default function redintro(){
                 opacity={opacitystate ? 0.8 : 1}
                 height={heightstate ? 500 : 155}
                 onClick={Handleclick} 
-                // onHamClick={HandleHamClick}
                 
                 >
                 </HeaderUI>
             </div>
-                {/* <HamburgerMenuUI 
-                    arrowrotation="rotate(-45deg)"
-                    arrowrotationC="rotate(225deg)"
-                    width="280px"
-                    height="610px"
-                    z-index="0"
-                    opacity={opacitystate ? 1 : 0}
-                    right={rightstate ? 95 : 375}
-                    
-                    
-                        
-                /> */}
             <div className={beach}>
                 <Image
                     alt="Beach"
                     src="/backgrounds/beach.png"
-                    layout="responsive"
-                    quality={50}
-                    width={375}
-                    height={750}
+                    layout="fill"
+                    objectFit="cover"
+                    quality={10}
                 />
             </div>
-                <img className="egg img" 
+            <div className="egg img">
+                <img
                     src="/drawings/egg.png"
                     alt="egg"
                     layout="responsive"
-                    width={305}
-                    height={385}
+                    quality={10}
+                    width={250}
+                    height={270}
                 />
-            <div className="footer">
+            </div>
                 <FooterUI 
                     routea='/howtoplay'
                     routeb="/redhatch"
                 />
-            </div>
     </RedCont>
 }

@@ -14,5 +14,18 @@
 .topmargin {
   width: 90vw;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+
+.rightmargin {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  
+}
+
+.turtleimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
