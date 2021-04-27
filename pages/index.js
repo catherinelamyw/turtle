@@ -15,7 +15,7 @@ export default function Home() {
       </div>
       <div className={styles.center}>
         <ButtonUI text='Start' bgcolor='#FFE9A7' width='244' routeTo='/customize'></ButtonUI>
-        <ButtonUI text='Quiz' bgcolor='#F0F0F0' width='244'></ButtonUI>
+        <ButtonUI text='Quiz' bgcolor='#F0F0F0' width='244' routeTo="/quizlist"></ButtonUI>
         <ButtonUI text='Facts' bgcolor='#F0F0F0' width='244' routeTo='/facts'></ButtonUI>
       </div>
     </div>

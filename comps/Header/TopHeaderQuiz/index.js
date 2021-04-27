@@ -1,17 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
-import HamburgerIcon from '../HamburgerIcon'
+import HouseIcon from '../HouseIcon'
+import WhiteTextUI from '../../WhiteText'
+import NumberIcon from '../PageNumberIcon'
 
 
 
-const QuizHeaderCont = styled.div`
+const HeaderCont = styled.div`
     font-family:sans-serif;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    justify-content: space-evenly;
     background-color: #242C3C;
     height: ${props=>props.height}px;
-    width: ${props=>props.width};
+    width: 100vw;
     opacity: ${props=>props.opacity};
     transition: 1s;
     padding: 0px 0px 0px 10px;
@@ -19,21 +20,25 @@ const QuizHeaderCont = styled.div`
     & > * {
         color: #fff;
     }
-    z-index: 1;
-    position: absolute;
     overflow: hidden;
+    z-index: 1;
 
 
 `
 //
-const QuizMenuCont = styled.div`
+const MenuCont = styled.div`
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    min-height: 150px;
+    min-width: 50px;
     
 `
 
-const QuizHeaderText = styled.h4`
+
+const HeaderText = styled.h4`
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -41,62 +46,46 @@ const QuizHeaderText = styled.h4`
     align-items: center;
     justify-content: center;
     width: 250px;
+    padding-bottom: 5px;
     
 
 `
-const QuizHeaderTextCont = styled.div`
-    display: flex;
-    flex-direction: column;
-    margin-top: 15px;
-   
-`
-
-const QuizHeaderTextFacts = styled.h2`
+const HeaderTextCont = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-right: 20%;
-    
+    text-align: center;
+    margin-top: 18px;
+   
 `
 
 const QuizHeaderUI = ({
     menucolor="#fff",
-    arrowrotation="rotate(0deg)",
-    text1="text",
     text2="text",
-    text3="text",
-    text4="text",
     text5="text",
     height="155px",
     width="375px",
     opacity="1",
     onClick = () =>{},
-    onHamClick =() =>{}
+    number="1",
     
 }) =>{
-    return <QuizHeaderCont height={height} width={width} opacity={opacity} >
-        <QuizMenuCont>
-            <HamburgerIcon menucolor={menucolor} onHamClick={onHamClick} />
-        </QuizMenuCont>
-        <QuizHeaderTextCont>
-            <QuizHeaderText >
-                {text1}
-                <br/>
-                {text2}
-                <br/>
-                {text3}
-                <br/>
-            </QuizHeaderText>
-            <QuizHeaderTextFacts>
-                {text4}
-            </QuizHeaderTextFacts>
-            <QuizHeaderText>
+    return <HeaderCont height={height} opacity={opacity} >
+        <MenuCont>
+            <HouseIcon menucolor={menucolor} />
+            <WhiteTextUI text="Home" fontsize="16" />
+        </MenuCont>
+        <HeaderTextCont>
+            <HeaderText >
+                <h1>{text2}</h1>
+            </HeaderText>
+            <HeaderText>
                 {text5}
-            </QuizHeaderText>
-        </QuizHeaderTextCont>
+            </HeaderText>
+        </HeaderTextCont>
+        <NumberIcon number={number} />
         
-    </QuizHeaderCont>
+    </HeaderCont>
 }
 
 export default QuizHeaderUI

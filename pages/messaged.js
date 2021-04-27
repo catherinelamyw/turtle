@@ -9,40 +9,36 @@ import CorrectUI from '../comps/Correct'
 
 
 const RedCont = styled.div `
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-width: 375px;
-    max-height: 812px;
-    z-index: 1;
-    position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+min-height: 100vh;
+min-width: 100vw;
+z-index: 1;
+position: relative;
+
     
     .correct {
+      margin-top: 35px;
+      justify-content: space-between;
       align-items: center:
       flex-direction: coloumn;
       z-index: 3;
       position: absolute;
-      justify-content: center;
-      top: 65px;
-      left: 20px;
     }
-
 
     .cry{
         display:flex;
         justify-content: center;
         align-items: center;
-        margin-left: 130px;
-        z-index: -1;
         
         
     }
-    .footer {
-        display: flex;
-        flex-direction: column;
-        z-index: 1;
-        
-        
+    .Bot {
+      display: flex;
+      flex-direction: column;
+    
         
     }
     
