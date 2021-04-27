@@ -12,7 +12,6 @@ export default function Conclusion() {
       <div className={styles.topmargin}>
         <HouseIcon />
         <div className={styles.rightmargin}>
-          <p>See your checkpoints</p>
           <HiMenu color='#fff' size='50px'/>
         </div>
       </div>
@@ -22,8 +21,8 @@ export default function Conclusion() {
             src="/drawings/_grn-dream.png"
             layout="intrinsic"
             quality={10}
-            width={250}
-            height={250}
+            width={100}
+            height={100}
             priority={true}
           />
         </div>

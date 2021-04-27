@@ -1,6 +1,7 @@
 import styles from '../styles/customize.module.css'
 import ButtonUI from '../comps/Button'
 import ColorUI from '../comps/Color'
+import HeadingUI from '../comps/Heading'
 import TextboxUI from '../comps/Textbox'
 import WhiteTextUI from '../comps/WhiteText'
 import {MdArrowBack, MdArrowForward} from 'react-icons/md';
@@ -12,7 +13,7 @@ export default function Customize() {
       <div className={styles.topmargin}>
         <HiMenu color='#fff' size='50px'/>
       </div>
-        <WhiteTextUI text='CUSTOMIZE'/>
+      <HeadingUI text='Customize'/>
       <div className={styles.graphics}>
         <MdArrowBack color='white' size='50px' title='left arrow' className={styles.symbols}/>
         <img className={styles.image} src='/drawings/_grn-start.png' />
@@ -23,8 +24,10 @@ export default function Customize() {
         <ColorUI color='#8C6239'/>
         <ColorUI color='#272C3B'/>
       </div>
-      <WhiteTextUI text='NAME'/>
-      <TextboxUI />
+      <div className={styles.row}>
+        <WhiteTextUI text='NAME'/>
+        <TextboxUI />
+      </div>
       <div>
         <ButtonUI text='Back' width='120' bgcolor='#FFE9A7'/>
         <ButtonUI text='Confirm' width='120' bgcolor='#FFE9A7' routeTo='/howtoplay'/>

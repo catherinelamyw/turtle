@@ -7,7 +7,9 @@ export default function HowToHelp() {
     <div className={styles.container}>
       <div className={styles.center}>
         <WhiteTextUI text="Learn how you can help with World Wildlife Fund" fontsize="20" parwidth="250"/>
-        <ButtonUI text='Link to External Page' bgcolor='#F0F0F0' width='244'></ButtonUI>
+        <div className={styles.anchor}>
+          <a target='blank' href='https://www.worldwildlife.org/how-to-help?_ga=2.40509291.873502901.1617340850-807957075.1617340850'>WWF How to Help</a>
+        </div>
       </div>
       <div className={styles.center}>
         <WhiteTextUI text="Read the facts that inspired this story" fontsize="20" parwidth="250"/>
