@@ -3,16 +3,17 @@ import ButtonUI from '../comps/Button';
 import FooterUI from '../comps/Footer';
 import styled from 'styled-components';
 import WhiteTextUI from '../comps/WhiteText';
+import CheckMarkUI from '../comps/CheckMark';
 
 
 const Quiz1Cont = styled.div`
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 375px;
-    max-height: 812px;
-    z-index: 1;
-    overflow: hidden;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+max-width: 375px;
+max-height: 812px;
+z-index: 1;
+position: relative;
 
     .Top {
         width: 90vw;
@@ -23,7 +24,6 @@ const Quiz1Cont = styled.div`
     }
 
     .Correct {
-        text-align: center;
         align-items: center:
         display: flex;
         flex-direction: coloumn;
@@ -41,10 +41,15 @@ const Quiz1Cont = styled.div`
         text-align: center;
         margin-left: 30px;
         margin-top: 165px;
+        display: flex;
+        flex-direction: column;
     }
 
     .cText {
-        padding: 60px;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 40px;
     }
 
     .Mid {
@@ -54,13 +59,13 @@ const Quiz1Cont = styled.div`
         margin-top: 80%;
         padding: 6%;
         padding-top: 80px;
+        margin-botton: 10%;
+        height: 460px;
     }
 
     .Bot {
         display: flex;
-        wdith: 90vw;
-        position: fixed;
-        bottom: 0;
+        flex-direction: column;
     }
 `
 export default function Quiz1() {
@@ -71,7 +76,8 @@ export default function Quiz1() {
         <div className="Correct">
             <div className="cBox">
                 <div className="cText">
-                    <WhiteTextUI parwidth="250" text="Correct!" fontsize="36" fontcolor="#242C3C"></WhiteTextUI><br/><br/>
+                    <CheckMarkUI></CheckMarkUI>
+                    <WhiteTextUI parwidth="250" text="CORRECT!" fontsize="36" fontcolor="#468329"></WhiteTextUI>
                     <WhiteTextUI parwidth="250" text="The short distance from where they hatch to the sea is usually the most dangerous" fontsize="20" fontcolor="#242C3C"></WhiteTextUI>
                 </div>
             </div>

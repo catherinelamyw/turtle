@@ -7,13 +7,13 @@ import SmallButtonUI from '../comps/SmallButton';
 
 
 const Quiz1Cont = styled.div`
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 375px;
-    max-height: 812px;
-    z-index: 1;
-    overflow: hidden;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+max-width: 375px;
+max-height: 812px;
+z-index: 1;
+position: relative;
 
     .Top {
         width: 90vw;
@@ -27,16 +27,16 @@ const Quiz1Cont = styled.div`
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-top: 70%;
+        margin-top: 80%;
         padding: 6%;
         padding-top: 80px;
+        margin-botton: 10%;
+        height: 460px;
     }
 
     .Bot {
         display: flex;
-        wdith: 90vw;
-        position: fixed;
-        bottom: 0;
+        flex-direction: column;
     }
 `
 export default function Quiz1() {

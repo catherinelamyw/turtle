@@ -99,8 +99,7 @@ export default function redintro(){
                 />
             <div className="footer">
                 <MarginUI 
-                    text="What is a positive change you 
-                    can make in your kitchen?"
+                    text="A positive change can even start from your kitchen, what could you do?"
                     buttona="Install a food garbage disposal in your sink"
                     buttonb="Choose environmentally- friendly cleaning products"
                     buttonc="Wash greasy plates in the sink"
