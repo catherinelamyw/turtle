@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import SmallButtonUI from '../SmallButton';
 
 const SmallBlueBox = styled.div`
-  width:375px;
+  width: 100vw;
   height:${props=>props.height}px;
   background-color:#242C3C;
   border-radius:20px 20px 0 0;
@@ -12,6 +12,7 @@ const SmallBlueBox = styled.div`
   justify-content:center;
   align-items:center;
   padding:20px;
+  z-index: 1;
 `
 
 const FooterUI = ({

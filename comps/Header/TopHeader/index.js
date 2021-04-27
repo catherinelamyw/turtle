@@ -10,10 +10,10 @@ import NumberIcon from '../PageNumberIcon'
 const HeaderCont = styled.div`
     font-family:sans-serif;
     display: flex;
-    flex-direction: row;
+    justify-content: space-evenly;
     background-color: #242C3C;
     height: ${props=>props.height}px;
-    width: ${props=>props.width};
+    width: 100vw;
     opacity: ${props=>props.opacity};
     transition: 1s;
     padding: 0px 0px 0px 10px;
@@ -21,9 +21,8 @@ const HeaderCont = styled.div`
     & > * {
         color: #fff;
     }
-    z-index: 1;
-    position: absolute;
     overflow: hidden;
+    z-index: 1;
 
 
 `
@@ -56,6 +55,7 @@ const HeaderTextCont = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     margin-top: 18px;
    
 `
@@ -65,6 +65,7 @@ const HeaderTextFacts = styled.h2`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
     
 `
 
@@ -82,7 +83,7 @@ const HeaderUI = ({
     number="1",
     
 }) =>{
-    return <HeaderCont height={height} width={width} opacity={opacity} >
+    return <HeaderCont height={height} opacity={opacity} >
         <MenuCont>
             <HouseIcon menucolor={menucolor} />
             <WhiteTextUI text="Home" fontsize="16" />
