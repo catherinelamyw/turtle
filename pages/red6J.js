@@ -10,29 +10,20 @@ import FooterUI from '../comps/Footer/'
 const RedCont = styled.div `
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    max-width: 375px;
-    max-height: 812px;
+    min-height: 100vh;
+    min-width: 100vw;
     z-index: 1;
     position: relative;
     
-    
-
 
     .cry{
         display:flex;
         justify-content: center;
         align-items: center;
-        margin-left: 20px;
-        margin-bottom: 110px;
         z-index: -1;
         transform: rotate(90deg);
-    }
-    .footer {
-        display: flex;
-        flex-direction: column;
-        
-        
     }
     
 `
@@ -75,24 +66,22 @@ export default function redintro(){
                 <Image
                     alt="open water"
                     src="/backgrounds/settle.png"
-                    layout="responsive"
-                    quality={50}
-                    width={375}
-                    height={750}
+                    layout="fill"
+                    objectFit="cover"
+                    quality={10}
                 />
             </div>
                 <img className="cry img" 
                     src="/drawings/_grn-cry.png"
                     alt="turtle"
                     layout="responsive"
+                    quality={10}
                     width={330}
                     height={300}
                 />
-            <div className="footer">
                 <FooterUI 
                     routea="/yellow3I"
                     routeb="/yellow3L"
                 />
-            </div>
     </RedCont>
 }

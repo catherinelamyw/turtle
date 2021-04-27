@@ -10,9 +10,10 @@ import MarginUI from '../comps/Margin'
 const RedCont = styled.div `
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    max-width: 375px;
-    max-height: 812px;
+    min-height: 100vh;
+    min-width: 100vw;
     z-index: 1;
     position: relative;
     
@@ -27,20 +28,10 @@ const RedCont = styled.div `
 
 
     .jellyy {
-        margin-left: 20px;
-        margin-bottom: 10px;
+        margin-right: 500px;
         z-index: -1;
     }
 
-    .footer {
-        display: flex;
-        flex-direction: column;
-        z-index: -1;
-       
-        
-        
-        
-    }
     
 `
 
@@ -82,10 +73,9 @@ export default function redintro(){
                 <Image
                     alt="water"
                     src="/backgrounds/interval.png"
-                    layout="responsive"
-                    quality={50}
-                    width={375}
-                    height={750}
+                    layout="fill"
+                    objectFit="cover"
+                    quality={10}
                 />
             </div>
                 <img className="jelly img" 
@@ -102,7 +92,6 @@ export default function redintro(){
                     width={50}
                     height={56}
                 />
-            <div className="footer">
                 <MarginUI 
                     text="What should we do?"
                     buttona="Eat some pink jellyfish"
@@ -112,6 +101,5 @@ export default function redintro(){
                     routeb="/red5J"
                     routec="/yellow3I"
                 />
-            </div>
     </RedCont>
 }

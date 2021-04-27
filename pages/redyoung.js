@@ -10,9 +10,10 @@ import FooterUI from '../comps/Footer/'
 const RedCont = styled.div `
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    max-width: 375px;
-    max-height: 812px;
+    min-height: 100vh;
+    min-width: 100vw;
     z-index: 1;
     position: relative;
     
@@ -22,15 +23,7 @@ const RedCont = styled.div `
         display:flex;
         justify-content: center;
         align-items: center;
-        margin-left: 95px;
-        margin-bottom: 233px;
         z-index: -1;
-    }
-    .footer {
-        display: flex;
-        flex-direction: column;
-        
-        
     }
     
 `
@@ -75,24 +68,22 @@ export default function redintro(){
                 <Image
                     alt="shoreline water"
                     src="/backgrounds/young.png"
-                    layout="responsive"
-                    quality={50}
-                    width={375}
-                    height={750}
+                    layout="fill"
+                    objectFit="cover"
+                    quality={10}
                 />
             </div>
                 <img className="young img" 
                     src="/drawings/_grn-young.png"
                     alt="egg"
                     layout="responsive"
+                    quality={10}
                     width={165}
                     height={176}
                 />
-            <div className="footer">
                 <FooterUI 
                     routea="/quiz1aa"
                     routeb="/yellowdirection"
                 />
-            </div>
     </RedCont>
 }

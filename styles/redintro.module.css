@@ -7,78 +7,89 @@
 }
 
 .juvenile {
-    width: 23.5em;
-    height: 18em;
-    z-index: -2;
-    margin-top: 0px;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: -1;
 }
 
 .young {
-    width: 23.5em;
-    height: 18em;
-    z-index: -2;
-    margin-top: 0px;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: -1;
 }
 
 .arrive {
-    width: 23.5em;
-    height: 18em;
-    z-index: -2;
-    margin-top: 0px;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: -1;
 }
 
 .settle {
-    width: 23.5em;
-    height: 18em;
-    z-index: -2;
-    margin-top: 0px;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: -1;
 }
 
 .deserted {
-    width: 23.5em;
-    height: 18em;
-    z-index: -2;
-    margin-top: 0px;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: -1;
 }
 
 .poisioning {
-    width: 23.5em;
-    height: 18em;
-    z-index: -2;
-    margin-top: 0px;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: -1;
 }
 
 .direction {
-    width: 23.5em;
-    height: 18em;
-    z-index: -2;
-    margin-top: 0px;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: -1;
 }
 
 .interval {
-    width: 23.5em;
-    height: 18em;
-    z-index: -2;
-    margin-top: 0px;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: -1;
 }
 
 .reality {
-    width: 23.5em;
-    height: 18em;
-    z-index: -2;
-    margin-top: 0px;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: -1;
 }
 
 .expectation {
-    width: 23.5em;
-    height: 18em;
-    z-index: -2;
-    margin-top: 0px;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: -1;
 }
 
 .comparision {
-    width: 23.5em;
-    height: 18em;
-    z-index: -2;
-    margin-top: 0px;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: -1;
 }

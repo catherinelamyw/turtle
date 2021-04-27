@@ -10,22 +10,15 @@ import FooterUI from '../comps/Footer'
 const RedCont = styled.div `
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    max-width: 375px;
-    max-height: 812px;
+    min-height: 100vh;
+    min-width: 100vw;
     z-index: 1;
     position: relative;
     
     
 
-    .footer {
-        display: flex;
-        flex-direction: column;
-        z-index: 1;
-        margin-top: 410px;
-        
-        
-    }
     
 `
 
@@ -67,17 +60,14 @@ export default function redintro(){
                 <Image
                     alt="pretty corals"
                     src="/backgrounds/expectation.jpg"
-                    layout="responsive"
-                    quality={50}
-                    width={375}
-                    height={750}
+                    layout="fill"
+                    objectFit="cover"
+                    quality={10}
                 />
             </div>
-            <div className="footer">
                 <FooterUI 
                     routea="/red2J"
                     routeb="/red3Kcompar"
                 />
-            </div>
     </RedCont>
 }

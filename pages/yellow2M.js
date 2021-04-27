@@ -10,9 +10,10 @@ import MarginUI from '../comps/Margin'
 const RedCont = styled.div `
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    max-width: 375px;
-    max-height: 812px;
+    min-height: 100vh;
+    min-width: 100vw;
     z-index: 1;
     position: relative;
     
@@ -23,19 +24,11 @@ const RedCont = styled.div `
         display:flex;
         justify-content: center;
         align-items: center;
-        margin-left: 130px;
         z-index: -1;
         
         
     }
-    .footer {
-        display: flex;
-        flex-direction: column;
-        z-index: 1;
-        
-        
-        
-    }
+ 
     
 `
 
@@ -84,20 +77,19 @@ export default function redintro(){
                 <Image
                     alt="Harsh"
                     src="/backgrounds/reality.png"
-                    layout="responsive"
-                    quality={50}
-                    width={375}
-                    height={750}
+                    layout="fill"
+                    objectFit="cover"
+                    quality={10}
                 />
             </div>
                 <img className="cry img" 
                     src="/drawings/_grn-cry.png"
                     alt="oil"
                     layout="responsive"
+                    quality={10}
                     width={170}
                     height={150}
                 />
-            <div className="footer">
                 <MarginUI 
                     text="A positive change can even start from your kitchen, what could you do?"
                     buttona="Install a food garbage disposal in your sink"
@@ -107,6 +99,5 @@ export default function redintro(){
                     routeb="/messageb"
                     routec="/messagec"
                 />
-            </div>
     </RedCont>
 }

@@ -4,7 +4,7 @@ import WhiteTextUI from '../WhiteText';
 import ButtonUI from '../Button';
 
 const BlueBox = styled.div`
-  width:375px;
+  width: 100vw;
   height:${props=>props.height}px;
   background-color:#242C3C;
   border-radius:20px 20px 0 0;

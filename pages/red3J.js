@@ -10,29 +10,21 @@ import FooterUI from '../comps/Footer/'
 const RedCont = styled.div `
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    max-width: 375px;
-    max-height: 812px;
+    min-height: 100vh;
+    min-width: 100vw;
     z-index: 1;
     position: relative;
     
-
 
     .dream{
         display:flex;
         justify-content: center;
         align-items: center;
-        margin-top: -30px;
-        margin-left: 45px;
-        margin-bottom: 245px;
         z-index: -1;
     }
-    .footer {
-        display: flex;
-        flex-direction: column;
-        
-        
-    }
+
     
 `
 
@@ -78,24 +70,22 @@ export default function redintro(){
                 <Image
                     alt="open water"
                     src="/backgrounds/deserted.png"
-                    layout="responsive"
-                    quality={50}
-                    width={375}
-                    height={750}
+                    layout="fill"
+                    objectFit="cover"
+                    quality={10}
                 />
             </div>
                 <img className="dream img" 
                     src="/drawings/_grn-dream.png"
                     alt="turtle"
                     layout="responsive"
+                    quality={10}
                     width={192}
                     height={195}
                 />
-            <div className="footer">
                 <FooterUI 
                     routea="/yellow3I"
                     routeb="/red3Kcompar"
                 />
-            </div>
     </RedCont>
 }
