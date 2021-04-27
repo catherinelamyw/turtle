@@ -25,7 +25,7 @@ position: relative;
       align-items: center:
       flex-direction: coloumn;
       z-index: 3;
-      position: absolute;
+      position: fixed;
     }
 
     .cry{
