@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import HouseIcon from '../HouseIcon'
+import HeadingUI from '../../Heading'
 import WhiteTextUI from '../../WhiteText'
 import NumberIcon from '../PageNumberIcon'
 
@@ -47,7 +48,6 @@ const HeaderText = styled.h4`
     justify-content: center;
     width: 250px;
     padding-bottom: 5px;
-    
 
 `
 const HeaderTextCont = styled.div`
@@ -76,9 +76,8 @@ const QuizHeaderUI = ({
             <WhiteTextUI text="Home" fontsize="16" />
         </MenuCont>
         <HeaderTextCont>
-            <HeaderText >
-                <h1>{text2}</h1>
-            </HeaderText>
+            <HeadingUI text={text2}>
+            </HeadingUI>
             <HeaderText>
                 {text5}
             </HeaderText>
