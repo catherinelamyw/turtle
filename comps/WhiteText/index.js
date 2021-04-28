@@ -4,7 +4,6 @@ import styled from 'styled-components';
 const Paragraph = styled.p`
   font-family:sans-serif;
   font-size:${props=>props.fontsize}px;
-  font-weight:700;
   color:${props=>props.color};
   text-align:center;
   padding:5px;

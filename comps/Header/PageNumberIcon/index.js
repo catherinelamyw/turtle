@@ -5,10 +5,16 @@ import WhiteTextUI from '../../WhiteText'
 const NumberCont = styled.div  `
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:center;
+    padding:5px;
+    max-width:300px;
+    &>* {
+        color:#FFF;
+      }
     align-items: center;
     margin-top: 22px;
-
+    height: auto;
+    width: auto;
 `
 const CircleNumber = styled.div `
     display: flex;
@@ -23,14 +29,13 @@ const CircleNumber = styled.div `
 `   
 
 const NumberIcon = ({
-    menucolor="white",
     number="1",
-    text="Page"
+    text="Page",
 }) => {
-    return <NumberCont menucolor={menucolor}>
+    return <NumberCont>
         <CircleNumber>{number}</CircleNumber>
-        <WhiteTextUI text={text} fontsize="16" />
+        <WhiteTextUI text={text} fontsize="16"></WhiteTextUI>
     </NumberCont>
 }
 
-export default NumberIcon
+export default NumberIcon;
