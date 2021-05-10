@@ -23,7 +23,7 @@ const Text = styled.div`
     padding: 30px;
     height: 500px;
     width: 290px;
-    line-height: 18px;
+    line-height: 22px;
 `
 
 const InfoUI = ({

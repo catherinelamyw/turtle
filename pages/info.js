@@ -7,9 +7,11 @@ import InfoUI from '../comps/InfoPopUpV2'
 import styled from 'styled-components'
 
 const InfoCont = styled.div`
-    position: absolute;
-    top: 84px;
-    left: 42px;
+    top: 55px;
+    justify-content: space-between;
+    align-items: center:
+    flex-direction: coloumn;
+    position: fixed;
 `
 
 export default function Home() {
@@ -19,10 +21,10 @@ export default function Home() {
         <HiMenu color='#fff' size='50px'/>
         <InfoButtonUI></InfoButtonUI>
       </div>
-      <InfoCont>
-          <InfoUI></InfoUI>
-      </InfoCont>
       <div className={styles.center}>
+        <InfoCont>
+          <InfoUI></InfoUI>
+        </InfoCont>
         <img className={styles.logo} src='/hawksbill_logo.png' alt='Hawksbill Logo'/>
         <WhiteTextUI text='An Educational &amp; Interactive Story'></WhiteTextUI>
       </div>
