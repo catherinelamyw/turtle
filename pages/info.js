@@ -3,6 +3,14 @@ import ButtonUI from '../comps/Button'
 import WhiteTextUI from '../comps/WhiteText'
 import {HiMenu} from 'react-icons/hi'
 import InfoButtonUI from '../comps/InfoButton'
+import InfoUI from '../comps/InfoPopUpV2'
+import styled from 'styled-components'
+
+const InfoCont = styled.div`
+    position: absolute;
+    top: 84px;
+    left: 42px;
+`
 
 export default function Home() {
   return (
@@ -11,6 +19,9 @@ export default function Home() {
         <HiMenu color='#fff' size='50px'/>
         <InfoButtonUI></InfoButtonUI>
       </div>
+      <InfoCont>
+          <InfoUI></InfoUI>
+      </InfoCont>
       <div className={styles.center}>
         <img className={styles.logo} src='/hawksbill_logo.png' alt='Hawksbill Logo'/>
         <WhiteTextUI text='An Educational &amp; Interactive Story'></WhiteTextUI>
