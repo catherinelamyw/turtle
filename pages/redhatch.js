@@ -81,7 +81,8 @@ export default function redintro(){
                     src="/backgrounds/beach.png"
                     layout="fill"
                     objectFit="cover"
-                    quality={10}
+                    priority="true"
+                    quality={50}
                 />
             </div>
                 <img className="baby"

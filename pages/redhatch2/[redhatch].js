@@ -1,10 +1,12 @@
 import styled from 'styled-components'
 import React from 'react'
 import {useState} from 'react'
-import HeaderUI from '../comps/Header/TopHeader'
+import HeaderUI from '../../comps/Header/TopHeader'
 import Image from 'next/image'
-import {young} from '../styles/redintro.module.css'
-import FooterUI from '../comps/Footer/'
+import {beach} from '../../styles/redintro.module.css'
+import FooterUI from '../../comps/Footer'
+import {useRouter} from 'next/router'
+import {main} from '../../data/text.js'
 
 
 const RedCont = styled.div `
@@ -17,74 +19,90 @@ const RedCont = styled.div `
     z-index: 1;
     position: relative;
     
+   
 
 
-    .young{
+    .egg {
         display:flex;
         justify-content: center;
         align-items: center;
         z-index: -1;
+        margin-top: 245px;
+       
     }
+
     
 `
 
-export default function redintro(){
+
+export default function redhatch2(){
+    const router = useRouter()
+    const {redhatch} = router.query
+
+    var text1 = "null"
+    var text2 = "null"
+    var text3 = "null"
+    var text4 = "null"
+    var text5 = "null"
+
+    if(redhatch == "redhatchcon"){
+        text1 = main.redhatch.text1
+        text2 = main.redhatch.text2
+        text3 = main.redhatch.text3
+        text4 = main.redhatch.text4
+        text5 = main.redhatch.text5
+    }
+
 
     const [heightstate, setheightstate] = useState(false)
     const [opacitystate, setopacitystate] = useState(false)
-    const [rightstate, setrightstate] = useState(false)
-    
+  
 
+  
     const Handleclick = () =>{
         setheightstate(!heightstate)
         setopacitystate(!opacitystate)
        
     }
 
-    
-
-    console.log("heightstate", heightstate)
-    console.log("opacitystate", opacitystate)
-    console.log("rightstate", rightstate)
     return <RedCont>
             <div className="header">
                 <HeaderUI
-                arrowrotation="rotate(225deg)"
-                text1="Now that Shelly is a  "
-                text2="young turtle, it’s time to "
-                text3="settle close to the shore."
-                text4="The Facts"
-                text5="where they stay for about 30 years until they reach adulthood, the hawksbill turtle prefers near shore line nestings due to the abundance of sponges they also like to feed on."
-                number="4"
+                text1={text1}
+                text2={text2}
+                text3={text3}
+                text4={text4}
+                text5={text5}
                 opacity={opacitystate ? 0.8 : 1}
                 height={heightstate ? 500 : 155}
                 onClick={Handleclick} 
-         
-               
+                
                 >
                 </HeaderUI>
             </div>
-            <div className={young}>
+            <div className={beach}>
                 <Image
-                    alt="shoreline water"
-                    src="/backgrounds/young.png"
+                    alt="Beach"
+                    src="/backgrounds/beach.png"
                     layout="fill"
                     objectFit="cover"
                     priority="true"
                     quality={50}
                 />
             </div>
-                <img className="young img" 
-                    src="/drawings/_grn-young.png"
+            <div className="egg img">
+                <img
+                    src="/drawings/egg.png"
                     alt="egg"
                     layout="responsive"
                     quality={10}
-                    width={165}
-                    height={176}
+                    width={250}e 
+                    height={270}
                 />
+            </div>
                 <FooterUI 
-                    routea="/quiz1aa"
-                    routeb="/yellowdirection"
+                    routea='/howtoplay'
+                    routeb={()=>router.push("/redhatch2/redhatchcon")}
                 />
     </RedCont>
 }
