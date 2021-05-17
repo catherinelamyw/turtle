@@ -64,3 +64,13 @@ export const facts = {
     fact:"Bycatch is a huge issue for the poor turtles and some organizations have been promoting circle hooks rather than j-shaped hooks, allowing the turtles to be freed with ease."
   },
 }
+
+export const main = {
+  redhatch:{
+    texts:"On a sandy beach,",
+    text2:"153 sea turtles eggs",
+    text3:"lay in a nest",
+    text4:"The Facts",
+    text5:"The whole nesting process for our turtles begins when they leave the sea to choose an area to lay their eggs. They dig a pit in the sand, fill it with 130 to 160 eggs, and then cover it. Then the hawksbill turtle will retreat back to see leaving the eggs, which will hatch in about 60 days.",
+  }
+}

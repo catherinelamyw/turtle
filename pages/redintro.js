@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import React from 'react'
 import {useState} from 'react'
+// import {mainWords} from '../data'
 import HeaderUI from '../comps/Header/TopHeader'
 import Image from 'next/image'
 import {beach} from '../styles/redintro.module.css'
@@ -38,7 +39,7 @@ export default function redintro(){
 
     const [heightstate, setheightstate] = useState(false)
     const [opacitystate, setopacitystate] = useState(false)
-    const [rightstate, setrightstate] = useState(false)
+
     
 
   
@@ -48,9 +49,6 @@ export default function redintro(){
        
     }
 
-    console.log("heightstate", heightstate)
-    console.log("opacitystate", opacitystate)
-    console.log("rightstate", rightstate)
     return <RedCont>
             <div className="header">
                 <HeaderUI
@@ -72,7 +70,8 @@ export default function redintro(){
                     src="/backgrounds/beach.png"
                     layout="fill"
                     objectFit="cover"
-                    quality={10}
+                    priority="true"
+                    quality={50}
                 />
             </div>
             <div className="egg img">
