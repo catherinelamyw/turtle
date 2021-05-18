@@ -8,6 +8,7 @@ const ButtonCont = styled.span`
 
 const ButtonInput = styled.button`
   background-color:${props=>props.background};
+  font-family: 'Roboto', sans-serif;
   font-size:16px;
   font-weight:700;
   color:#242C3C;

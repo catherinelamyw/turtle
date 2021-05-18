@@ -21,8 +21,8 @@ export default function Conclusion() {
             src="/drawings/_grn-dream.png"
             layout="intrinsic"
             quality={10}
-            width={100}
-            height={100}
+            width={200}
+            height={200}
             priority={true}
           />
         </div>
