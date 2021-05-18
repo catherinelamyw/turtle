@@ -3,6 +3,10 @@ import ButtonUI from '../comps/Button';
 import ConfirmFooterUI from '../comps/ConfirmFooter';
 import styled from 'styled-components';
 import Image from 'next/image';
+import {useState} from 'react';
+import QuizButton from '../comps/QuizButton';
+import ConfirmQuiz from '../comps/ConfirmQuiz';
+import AnswerModel from '../comps/AnswerModal';
 
 const Quiz1Cont = styled.div`
 display: flex;
@@ -38,14 +42,17 @@ position: relative;
 `
 
 export default function Quiz1() {
+    const [selectedAnswer, setSelectedAnswer] = useState("");
+    const [modalDisplay, setModalDisplay] = useState(false);
+
     return <Quiz1Cont>
         <div className="Top">
             <QuizHeaderUI number="test" text2="POP QUIZ" text5="How many eggs do the Hawksbill Sea Turtles lay?"></QuizHeaderUI>
         </div>
         <div className="Mid">
-            <ButtonUI text="130 to 160" bgcolor="#FFE9A7" routeTo="/quiz1a"></ButtonUI><br/>
-            <ButtonUI text="50 to 100" bgcolor="#FFE9A7" routeTo="/quiz1b"></ButtonUI><br/>
-            <ButtonUI text="10 to 40" bgcolor="#FFE9A7" routeTo="/quiz1c"></ButtonUI>
+            <QuizButton text="130 to 160" setSelectedAnswer={setSelectedAnswer} selectedAnswer={selectedAnswer} id="1"></QuizButton><br/>
+            <QuizButton text="50 to 100" setSelectedAnswer={setSelectedAnswer} selectedAnswer={selectedAnswer} id="2"></QuizButton><br/>
+            <QuizButton text="10 to 40"setSelectedAnswer={setSelectedAnswer} selectedAnswer={selectedAnswer} id="3"></QuizButton>
         </div>
         <div className="img">
         <Image
@@ -57,7 +64,11 @@ export default function Quiz1() {
         />
         </div>
         <div className="Bot">
-            <ConfirmFooterUI routeTo=""></ConfirmFooterUI>
+            <ConfirmQuiz setModalDisplay={setModalDisplay} ></ConfirmQuiz>
         </div>
+        {modalDisplay ? 
+            <AnswerModel correct={selectedAnswer === "1"} answer="Sea turtles lay 130 to 160 eggs at a time"></AnswerModel> :
+            <></>
+        }
     </Quiz1Cont>
 }

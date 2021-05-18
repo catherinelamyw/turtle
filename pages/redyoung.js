@@ -83,7 +83,7 @@ export default function redintro(){
                     height={176}
                 />
                 <FooterUI 
-                    routea="/quiz1aa"
+                    routea="/quiz1"
                     routeb="/yellowdirection"
                 />
     </RedCont>
