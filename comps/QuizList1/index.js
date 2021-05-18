@@ -4,7 +4,6 @@ import SmallButtonUI from "../SmallButton"
 import CheckMarkUI from "../CheckMark"
 import WhiteTextUI from "../WhiteText"
 import XMark from "../XMark"
-import { IconBase } from "react-icons/lib"
 
 const AnswerModalCont = styled.div`
 align-items: center:
@@ -45,7 +44,7 @@ position: absolute;
 
 `
 
-export default function AnswerModel({
+export default function AnswerModelList({
     correct,
     answer
 }) {
@@ -53,17 +52,18 @@ export default function AnswerModel({
         <AnswerModalCont>
             <div className="cBox">
                 <div className="cText">
-                        {correct ? <CheckMarkUI/> : <XMark/>}
+                    {correct ? <CheckMarkUI/> : <XMark/>}
                     <WhiteTextUI parwidth="250" text={correct ? "CORRECT!" : "INCORRECT"} fontsize="36" fontcolor={correct ? "#468329" : "#FF6464"}></WhiteTextUI>
                     <WhiteTextUI parwidth="250" text={correct ? answer : "Try again or skip this quiz"} fontsize="20" fontcolor="#242C3C"></WhiteTextUI><br/><br/>
                     <div className="row">
                         {
                             correct ?
-                                <SmallButtonUI text="Continue" routeTo="/redyoung"></SmallButtonUI> :
+                                <SmallButtonUI text="Quiz 2" routeTo="/q2list"></SmallButtonUI>
+                                 :
                                 (
                                     <>
-                                        <SmallButtonUI text="Try Again" routeTo="/quiz1"></SmallButtonUI>
-                                        <SmallButtonUI text="Pass" routeTo="/redyoung"></SmallButtonUI>
+                                        <SmallButtonUI text="Try Again" routeTo="/q1list"></SmallButtonUI>
+                                        <SmallButtonUI text="Pass" routeTo="/q2list"></SmallButtonUI>
                                     </>
                                 )
                         }

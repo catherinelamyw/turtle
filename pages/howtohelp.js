@@ -17,7 +17,7 @@ export default function HowToHelp() {
       </div>
       <div className={styles.center}>
         <WhiteTextUI text="Challenge yourself with more quizzes" fontsize="20" parwidth="250"/>
-        <ButtonUI text='Quiz' bgcolor='#F0F0F0' width='244' routeTo="/quizlist"></ButtonUI>
+        <ButtonUI text='Quiz' bgcolor='#F0F0F0' width='244' routeTo="/qlist"></ButtonUI>
       </div>
       <div className={styles.center}>
         <WhiteTextUI text="Restart the story and try a different path" fontsize="20" parwidth="250"/>
