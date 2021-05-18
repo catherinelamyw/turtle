@@ -96,7 +96,7 @@ export default function redhatch2(){
                     alt="egg"
                     layout="responsive"
                     quality={10}
-                    width={250}e 
+                    width={250} 
                     height={270}
                 />
             </div>

@@ -73,7 +73,7 @@ export default function redintro(){
                     layout="fill"
                     objectFit="cover"
                     priority="true"
-                    quality={50}
+                    quality={10}
                 />
             </div>
                 <img className="juven img" 

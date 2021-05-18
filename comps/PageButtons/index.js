@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const ButtonCont = styled.span`
@@ -16,8 +16,8 @@ const ButtonInput = styled.button`
 `;
 
 const PageButton = ({
-  text="1",
-  onClick=()=>{}
+  text = "1",
+  onClick = () => { }
 }) => {
   return <ButtonCont onClick={onClick}>
     <ButtonInput>{text}</ButtonInput>

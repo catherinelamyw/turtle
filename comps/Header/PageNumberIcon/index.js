@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import WhiteTextUI from '../../WhiteText'
 
-const NumberCont = styled.div  `
+const NumberCont = styled.div`
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -16,8 +16,9 @@ const NumberCont = styled.div  `
     height: auto;
     width: auto;
 `
-const CircleNumber = styled.div `
+const CircleNumber = styled.div`
     display: flex;
+    font-family: 'Roboto', sans-serif;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -26,15 +27,15 @@ const CircleNumber = styled.div `
     width: 42px;
     height: 42px;
     color: white;
-`   
+`
 
 const NumberIcon = ({
-    number="1",
-    text="Page",
+    number = "1",
+    text = "Page",
 }) => {
     return <NumberCont>
         <CircleNumber>{number}</CircleNumber>
-        <WhiteTextUI text={text} fontsize="16"></WhiteTextUI>
+        <WhiteTextUI text={text} fontsize="12"></WhiteTextUI>
     </NumberCont>
 }
 

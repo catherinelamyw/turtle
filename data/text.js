@@ -67,7 +67,7 @@ export const facts = {
 
 export const main = {
   redhatch:{
-    texts:"On a sandy beach,",
+    text1:"On a sandy beach,",
     text2:"153 sea turtles eggs",
     text3:"lay in a nest",
     text4:"The Facts",

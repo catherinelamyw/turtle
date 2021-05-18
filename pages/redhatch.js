@@ -1,15 +1,15 @@
 import styled from 'styled-components'
 import React from 'react'
-import {useState} from 'react'
+import { useState } from 'react'
 import HeaderUI from '../comps/Header/TopHeader'
 import Image from 'next/image'
-import {beach} from '../styles/redintro.module.css'
+import { beach } from '../styles/redintro.module.css'
 import FooterUI from '../comps/Footer/'
 
 
 
 
-const RedCont = styled.div `
+const RedCont = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,24 +41,24 @@ const RedCont = styled.div `
     
 `
 
-export default function redintro(){
+export default function redintro() {
 
     const [heightstate, setheightstate] = useState(false)
     const [opacitystate, setopacitystate] = useState(false)
     const [rightstate, setrightstate] = useState(false)
-    
 
-    const Handleclick = () =>{
+
+    const Handleclick = () => {
         setheightstate(!heightstate)
         setopacitystate(!opacitystate)
-       
+
     }
     console.log("heightstate", heightstate)
     console.log("opacitystate", opacitystate)
     console.log("rightstate", rightstate)
     return <RedCont>
-            <div className="header">
-                <HeaderUI
+        <div className="header">
+            <HeaderUI
                 text1="The swarming seagulls are "
                 text2=" ready to prey. One lucky turtle "
                 text3="reaches the ocean unharmed."
@@ -67,43 +67,43 @@ export default function redintro(){
                 number="2"
                 opacity={opacitystate ? 0.8 : 1}
                 height={heightstate ? 500 : 155}
-                onClick={Handleclick} 
-               
-                
-                
-                
-                >
-                </HeaderUI>
-            </div>
-            <div className={beach}>
-                <Image
-                    alt="Beach"
-                    src="/backgrounds/beach.png"
-                    layout="fill"
-                    objectFit="cover"
-                    priority="true"
-                    quality={50}
-                />
-            </div>
-                <img className="baby"
-                    src="/drawings/_grn-baby.png"
-                    alt="egg"
-                    layout="responsive"
-                    quality={10}
-                    width={100}
-                    height={120}
-                />
-                <img className="shell" 
-                    src="/drawings/shell.png"
-                    alt="egg"
-                    layout="responsive"
-                    quality={10}
-                    width={250}
-                    height={270}
-                />
-                <FooterUI
-                    routea="/redintro"
-                    routeb="/redjuven"
-                />
+                onClick={Handleclick}
+
+
+
+
+            >
+            </HeaderUI>
+        </div>
+        <div className={beach}>
+            <Image
+                alt="Beach"
+                src="/backgrounds/beach.png"
+                layout="fill"
+                objectFit="cover"
+                priority="true"
+                quality={10}
+            />
+        </div>
+        <img className="baby"
+            src="/drawings/_grn-baby.png"
+            alt="egg"
+            layout="responsive"
+            quality={10}
+            width={100}
+            height={120}
+        />
+        <img className="shell"
+            src="/drawings/shell.png"
+            alt="egg"
+            layout="responsive"
+            quality={10}
+            width={250}
+            height={270}
+        />
+        <FooterUI
+            routea="/redintro"
+            routeb="/redjuven"
+        />
     </RedCont>
 }

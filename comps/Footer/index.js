@@ -4,7 +4,7 @@ import SmallButtonUI from '../SmallButton';
 
 const SmallBlueBox = styled.div`
   width: 100vw;
-  height:${props=>props.height}px;
+  height:${props => props.height}px;
   background-color:#242C3C;
   border-radius:20px 20px 0 0;
   display:flex;
@@ -16,15 +16,15 @@ const SmallBlueBox = styled.div`
 `
 
 const FooterUI = ({
-    buttona="Back",
-    buttonb="Next",
-    routea="/",
-    routeb="/",
-  }) => {
-    return <SmallBlueBox>
-      <SmallButtonUI text={buttona} routeTo={routea}></SmallButtonUI>
-      <SmallButtonUI text={buttonb} routeTo={routeb}></SmallButtonUI>
-    </SmallBlueBox>
-  }
-  
-  export default FooterUI;
+  buttona = "Back",
+  buttonb = "Next",
+  routea = "/",
+  routeb = "/",
+}) => {
+  return <SmallBlueBox>
+    <SmallButtonUI text={buttona} routeTo={routea}></SmallButtonUI>
+    <SmallButtonUI text={buttonb} routeTo={routeb}></SmallButtonUI>
+  </SmallBlueBox>
+}
+
+export default FooterUI;
