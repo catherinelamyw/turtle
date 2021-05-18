@@ -42,15 +42,22 @@ position: absolute;
     text-align: center;
 }
 
+.icons {
+    position: absolute;
+    z-index: 5;
+    top: 200px;
+}
+
 `
 
-export default function AnswerModelList({
+export default function AnswerModel({
     correct,
     answer
 }) {
     return (
         <AnswerModalCont>
             <div className="cBox">
+                <div className="icons">{correct ? <CheckMarkUI/> : <XMark/>}</div>
                 <div className="cText">
                     {correct ? <CheckMarkUI/> : <XMark/>}
                     <WhiteTextUI parwidth="250" text={correct ? "CORRECT!" : "INCORRECT"} fontsize="36" fontcolor={correct ? "#468329" : "#FF6464"}></WhiteTextUI>
