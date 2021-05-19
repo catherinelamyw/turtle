@@ -67,7 +67,7 @@ export default function Quiz2List() {
             <ConfirmQuiz setModalDisplay={setModalDisplay} ></ConfirmQuiz>
         </div>
         {modalDisplay ? 
-            <AnswerModelList2 correct={selectedAnswer === "1"} answer="Sea turtles lay 130 to 160 eggs at a time"></AnswerModelList2> :
+            <AnswerModelList2 correct={selectedAnswer === "3"} answer="Sea turtles lay 130 to 160 eggs at a time"></AnswerModelList2> :
             <></>
         }
     </Quiz2Cont>
