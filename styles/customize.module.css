@@ -28,9 +28,7 @@
 }
 
 .colors {
-  display: flex;
-  width: 200px;
-  justify-content: space-between;
+  margin: 20px 0 0 0;
 }
 
 .container, .center {
