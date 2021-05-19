@@ -47,7 +47,7 @@ export default function Quiz2List() {
 
     return <Quiz2Cont>
         <div className="Top">
-            <QuizHeaderUI number="test" text2="POP QUIZ" text5="How many eggs do the Hawksbill Sea Turtles lay?"></QuizHeaderUI>
+            <QuizHeaderUI number="test" text2="POP QUIZ" text5="What part of a Hawksbill Sea Tutles life is the most dangerous?"></QuizHeaderUI>
         </div>
         <div className="Mid">
             <QuizButton text="Scavenging for food" setSelectedAnswer={setSelectedAnswer} selectedAnswer={selectedAnswer} id="1"></QuizButton><br/>
