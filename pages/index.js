@@ -1,14 +1,14 @@
 import styles from '../styles/main.module.css'
 import ButtonUI from '../comps/Button'
 import WhiteTextUI from '../comps/WhiteText'
-import {HiMenu} from 'react-icons/hi'
+import HamIcon from '../comps/Header/HamburgerIcon'
 import InfoButtonUI from '../comps/InfoButton'
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.topmargin}>
-        <HiMenu color='#fff' size='50px'/>
+        <HamIcon />
         <InfoButtonUI></InfoButtonUI>
       </div>
       <div className={styles.center}>

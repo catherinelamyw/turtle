@@ -6,10 +6,14 @@ import HouseIcon from '../comps/Header/HouseIcon'
 import WhiteTextUI from '../comps/WhiteText'
 import {MdMenu} from 'react-icons/md';
 import {BsFillHouseDoorFill} from 'react-icons/bs'
+import HamIcon from '../comps/Header/HamburgerIcon'
 
 export default function HowToPlay() {
   return (
     <div className={styles.container}>
+      <div className={styles.topmargin}>
+        <HamIcon />
+      </div>
       <HeadingUI text='How to Play'/>
       <div className={styles.pics}>
         <NumberIcon number='A' text='Read the story at the top'/>

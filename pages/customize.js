@@ -6,7 +6,7 @@ import TextboxUI from '../comps/Textbox'
 import WhiteTextUI from '../comps/WhiteText'
 import React, {useState} from 'react'
 import {MdArrowBack, MdArrowForward} from 'react-icons/md';
-import {HiMenu} from 'react-icons/hi'
+import HamIcon from '../comps/Header/HamburgerIcon'
 
 export default function Customize() {
   const [imgcolor, setImgcolor] = useState("/drawings/_grn-start.png")
@@ -26,7 +26,7 @@ export default function Customize() {
   return (
     <div className={styles.container}>
       <div className={styles.topmargin}>
-        <HiMenu color='#fff' size='50px'/>
+        <HamIcon />
       </div>
       <HeadingUI text='Customize'/>
       <div className={styles.graphics}>
