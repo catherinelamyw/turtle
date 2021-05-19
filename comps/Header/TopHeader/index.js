@@ -8,7 +8,6 @@ import NumberIcon from '../PageNumberIcon'
 
 
 const HeaderCont = styled.div`
-    font-family:sans-serif;
     display: flex;
     justify-content: space-evenly;
     font-family: 'Roboto', sans-serif;
