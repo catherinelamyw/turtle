@@ -13,7 +13,9 @@
 .image {
   max-width: 240px;
   margin: 20px;
-  opacity: 50%;
+  opacity: 90%;
+  border: 1px solid #FFE9A7;
+  border-radius: 10px;
 }
 
 .bigpar {
@@ -27,7 +29,8 @@
   margin: 50px;
   align-items: center;
   justify-content: center;
-  border: 1px solid #FFE9A7;
+  border-radius: 10px;
+  background-color: #468329;
   min-width: 300px;
   max-width: 300px;
   padding: 10px;
@@ -45,4 +48,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+
+.footer {
+  margin:40px;
 }
